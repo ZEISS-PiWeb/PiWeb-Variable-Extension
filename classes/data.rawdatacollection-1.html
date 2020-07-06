@@ -1,0 +1,312 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>RawDataCollection | PiWeb Variable Extension API Reference</title>
+	<meta name="description" content="Documentation for PiWeb Variable Extension API Reference">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">PiWeb Variable Extension API Reference</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/data.html">data</a>
+				</li>
+				<li>
+					<a href="data.rawdatacollection-1.html">RawDataCollection</a>
+				</li>
+			</ul>
+			<h1>Class RawDataCollection</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Describes a list of raw data information with additional functions to access certain entries. You can iterate over the collection like the following:</p>
+					</div>
+					<ul>
+						<li><pre><code class="language-TypeScript"><span class="hljs-keyword">const</span> rawDataCollection = piweb.data.getRawDataCollection();
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> rawDataItem <span class="hljs-keyword">of</span> rawDataCollection)
+{
+ ...
+}</code></pre>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">RawDataCollection</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="data.rawdatacollection-1.html#length" class="tsd-kind-icon">length</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.rawdatacollection-1.html#findbyentity" class="tsd-kind-icon">find<wbr>ByEntity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.rawdatacollection-1.html#findbyname" class="tsd-kind-icon">find<wbr>ByName</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.rawdatacollection-1.html#iter" class="tsd-kind-icon">iter</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="length" class="tsd-anchor"></a>
+					<h3>length</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> length<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in PiWeb/src/Shared/Extensions/VariableRuntime/Api/Sources/ts/node_modules/piweb/data/raw_data.ts:212</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the total number of items in this collection.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="findbyentity" class="tsd-anchor"></a>
+					<h3>find<wbr>ByEntity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>ByEntity<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="data.inspectionplanitem-1.html" class="tsd-signature-type">InspectionPlanItem</a><span class="tsd-signature-symbol"> | </span><a href="data.measurement-1.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol"> | </span><a href="data.measurementvalue-1.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.rawdataitem-1.html" class="tsd-signature-type">RawDataItem</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in PiWeb/src/Shared/Extensions/VariableRuntime/Api/Sources/ts/node_modules/piweb/data/raw_data.ts:243</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the raw data items that are associated to the specified entity.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>entity: <a href="data.inspectionplanitem-1.html" class="tsd-signature-type">InspectionPlanItem</a><span class="tsd-signature-symbol"> | </span><a href="data.measurement-1.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol"> | </span><a href="data.measurementvalue-1.html" class="tsd-signature-type">MeasurementValue</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An instance of a raw data entity.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.rawdataitem-1.html" class="tsd-signature-type">RawDataItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="findbyname" class="tsd-anchor"></a>
+					<h3>find<wbr>ByName</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>ByName<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>wildcards<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.rawdataitem-1.html" class="tsd-signature-type">RawDataItem</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in PiWeb/src/Shared/Extensions/VariableRuntime/Api/Sources/ts/node_modules/piweb/data/raw_data.ts:220</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the items that match one or more of the specified filter strings.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>wildcards: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>One or more filter strings. Wildcards like &#39;*&#39; are allowed.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.rawdataitem-1.html" class="tsd-signature-type">RawDataItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="iter" class="tsd-anchor"></a>
+					<h3>iter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">iter<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.rawdataitem-1.html" class="tsd-signature-type">RawDataItem</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in PiWeb/src/Shared/Extensions/VariableRuntime/Api/Sources/ts/node_modules/piweb/data/raw_data.ts:204</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an iter over all raw data items.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.rawdataitem-1.html" class="tsd-signature-type">RawDataItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/data.html">data</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/environment.html">environment</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/events.html">events</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/expressions.html">expressions</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/format.html">format</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/logger.html">logger</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/parameters.html">parameters</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/resources.html">resources</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="data.rawdatacollection-1.html" class="tsd-kind-icon">Raw<wbr>Data<wbr>Collection</a>
+						<ul>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="data.rawdatacollection-1.html#length" class="tsd-kind-icon">length</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="data.rawdatacollection-1.html#findbyentity" class="tsd-kind-icon">find<wbr>ByEntity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="data.rawdatacollection-1.html#findbyname" class="tsd-kind-icon">find<wbr>ByName</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="data.rawdatacollection-1.html#iter" class="tsd-kind-icon">iter</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

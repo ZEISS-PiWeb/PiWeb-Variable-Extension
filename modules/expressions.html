@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>expressions | PiWeb Variable Extension API Reference</title>
-	<meta name="description" content="">
+	<meta name="description" content="Documentation for PiWeb Variable Extension API Reference">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -13,7 +13,7 @@
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -57,51 +57,51 @@
 					<a href="expressions.html">expressions</a>
 				</li>
 			</ul>
-			<h1>External module expressions</h1>
+			<h1>Module expressions</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<a href="#introduction" id="introduction" style="color: inherit; text-decoration: none;">
+							<h2>Introduction</h2>
+						</a>
+					</div>
+					<p>The &#39;piweb.expressions&#39; module returns the result of a system variable expression. The evaluation result depends on the context
+					of the calling variable, as well as the current page state and many other parameters. Just like the other data provider methods.</p>
+					<pre><code class="language-TypeScript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> piweb <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;piweb&#x27;</span>;
+<span class="hljs-keyword">import</span> expressions = piweb.expressions;</code></pre>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected tsd-is-not-exported">
-							<h3>Enumerations</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported"><a href="../enums/expressions.systemvariabletypeid.html" class="tsd-kind-icon">System<wbr>Variable<wbr>Type<wbr>Id</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/expressions.expressiondataarray.html" class="tsd-kind-icon">Expression<wbr>Data<wbr>Array</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/expressions.expressiondataarray.html" class="tsd-kind-icon">Expression<wbr>Data<wbr>Array</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="expressions.html#expressiondatatype" class="tsd-kind-icon">Expression<wbr>Data<wbr>Type</a></li>
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="expressions.html#simpleexpressiondata" class="tsd-kind-icon">Simple<wbr>Expression<wbr>Data</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected tsd-is-not-exported">
-							<h3>Variables</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported"><a href="expressions.html#internalprovider" class="tsd-kind-icon">internal<wbr>Provider</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="expressions.html#expressiondatatype" class="tsd-kind-icon">Expression<wbr>Data<wbr>Type</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="expressions.html#simpleexpressiondata" class="tsd-kind-icon">Simple<wbr>Expression<wbr>Data</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="expressions.html#evaluate" class="tsd-kind-icon">evaluate</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="expressions.html#evaluateasarray" class="tsd-kind-icon">evaluate<wbr>AsArray</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="expressions.html#evaluateasdate" class="tsd-kind-icon">evaluate<wbr>AsDate</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="expressions.html#evaluateasnumber" class="tsd-kind-icon">evaluate<wbr>AsNumber</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="expressions.html#evaluateasstring" class="tsd-kind-icon">evaluate<wbr>AsString</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported"><a href="expressions.html#readvalue" class="tsd-kind-icon">read<wbr>Value</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="expressions.html#evaluate" class="tsd-kind-icon">evaluate</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="expressions.html#evaluateasarray" class="tsd-kind-icon">evaluate<wbr>AsArray</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="expressions.html#evaluateasdate" class="tsd-kind-icon">evaluate<wbr>AsDate</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="expressions.html#evaluateasnumber" class="tsd-kind-icon">evaluate<wbr>AsNumber</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="expressions.html#evaluateasstring" class="tsd-kind-icon">evaluate<wbr>AsString</a></li>
 							</ul>
 						</section>
 					</div>
@@ -109,55 +109,57 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="expressiondatatype" class="tsd-anchor"></a>
 					<h3>Expression<wbr>Data<wbr>Type</h3>
 					<div class="tsd-signature tsd-kind-icon">Expression<wbr>Data<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="expressions.html#simpleexpressiondata" class="tsd-signature-type">SimpleExpressionData</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/expressions.expressiondataarray.html" class="tsd-signature-type">ExpressionDataArray</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in expressions.ts:50</li>
+							<li>Defined in PiWeb/src/Shared/Extensions/VariableRuntime/Api/Sources/ts/node_modules/piweb/expressions.ts:50</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The cumulated possible return types of an expression.</p>
+						</div>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="simpleexpressiondata" class="tsd-anchor"></a>
 					<h3>Simple<wbr>Expression<wbr>Data</h3>
 					<div class="tsd-signature tsd-kind-icon">Simple<wbr>Expression<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in expressions.ts:40</li>
+							<li>Defined in PiWeb/src/Shared/Extensions/VariableRuntime/Api/Sources/ts/node_modules/piweb/expressions.ts:40</li>
 						</ul>
 					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected tsd-is-not-exported">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported">
-					<a name="internalprovider" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> internal<wbr>Provider</h3>
-					<div class="tsd-signature tsd-kind-icon">internal<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require.binding(&#x27;DataImageProvider&#x27;)</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in expressions.ts:24</li>
-						</ul>
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The possible simple return types of an expression.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="evaluate" class="tsd-anchor"></a>
 					<h3>evaluate</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 						<li class="tsd-signature tsd-kind-icon">evaluate<span class="tsd-signature-symbol">(</span>expression<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="expressions.html#expressiondatatype" class="tsd-signature-type">ExpressionDataType</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in expressions.ts:55</li>
+									<li>Defined in PiWeb/src/Shared/Extensions/VariableRuntime/Api/Sources/ts/node_modules/piweb/expressions.ts:55</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Evaluates the specified expression and returns the result untyped.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -168,130 +170,127 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="evaluateasarray" class="tsd-anchor"></a>
 					<h3>evaluate<wbr>AsArray</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 						<li class="tsd-signature tsd-kind-icon">evaluate<wbr>AsArray<span class="tsd-signature-symbol">(</span>expression<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/expressions.expressiondataarray.html" class="tsd-signature-type">ExpressionDataArray</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in expressions.ts:106</li>
+									<li>Defined in PiWeb/src/Shared/Extensions/VariableRuntime/Api/Sources/ts/node_modules/piweb/expressions.ts:106</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Evaluates the specified expression and returns the result as <code>array</code> or <code>undefined</code>, in case the result wasn&#39;t an <code>array</code> of any kind.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>expression: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The expression to evaluate.</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/expressions.expressiondataarray.html" class="tsd-signature-type">ExpressionDataArray</a>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">undefined</span>
-							</h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/expressions.expressiondataarray.html" class="tsd-signature-type">ExpressionDataArray</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="evaluateasdate" class="tsd-anchor"></a>
 					<h3>evaluate<wbr>AsDate</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 						<li class="tsd-signature tsd-kind-icon">evaluate<wbr>AsDate<span class="tsd-signature-symbol">(</span>expression<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in expressions.ts:93</li>
+									<li>Defined in PiWeb/src/Shared/Extensions/VariableRuntime/Api/Sources/ts/node_modules/piweb/expressions.ts:93</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Evaluates the specified expression and returns the result as <code>date</code> or <code>undefined</code>, in case the result can&#39;t be converted into a <code>date</code> representation.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>expression: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The expression to evaluate.</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">undefined</span>
-							</h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="evaluateasnumber" class="tsd-anchor"></a>
 					<h3>evaluate<wbr>AsNumber</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 						<li class="tsd-signature tsd-kind-icon">evaluate<wbr>AsNumber<span class="tsd-signature-symbol">(</span>expression<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in expressions.ts:80</li>
+									<li>Defined in PiWeb/src/Shared/Extensions/VariableRuntime/Api/Sources/ts/node_modules/piweb/expressions.ts:80</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Evaluates the specified expression and returns the result as <code>number</code> or <code>undefined</code>, in case the result can&#39;t be converted into a <code>number</code> representation.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>expression: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The expression to evaluate.</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">undefined</span>
-							</h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="evaluateasstring" class="tsd-anchor"></a>
 					<h3>evaluate<wbr>AsString</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 						<li class="tsd-signature tsd-kind-icon">evaluate<wbr>AsString<span class="tsd-signature-symbol">(</span>expression<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in expressions.ts:67</li>
+									<li>Defined in PiWeb/src/Shared/Extensions/VariableRuntime/Api/Sources/ts/node_modules/piweb/expressions.ts:67</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Evaluates the specified expression and returns the result as <code>string</code> or <code>undefined</code>, in case the result can&#39;t be converted into a <code>string</code> representation.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>expression: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The expression to evaluate.</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">undefined</span>
-							</h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported">
-					<a name="readvalue" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Value</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Value<span class="tsd-signature-symbol">(</span>reader<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BufferReader</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="expressions.html#expressiondatatype" class="tsd-signature-type">ExpressionDataType</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in expressions.ts:118</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>reader: <span class="tsd-signature-type">BufferReader</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="expressions.html#expressiondatatype" class="tsd-signature-type">ExpressionDataType</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -303,69 +302,57 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="index.html">Index</a>
-					</li>
-					<li class=" tsd-kind-external-module">
+					<li class=" tsd-kind-module">
 						<a href="data.html">data</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class=" tsd-kind-module">
 						<a href="environment.html">environment</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class=" tsd-kind-module">
 						<a href="events.html">events</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class="current tsd-kind-module">
 						<a href="expressions.html">expressions</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class=" tsd-kind-module">
 						<a href="format.html">format</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class=" tsd-kind-module">
 						<a href="logger.html">logger</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class=" tsd-kind-module">
 						<a href="parameters.html">parameters</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class=" tsd-kind-module">
 						<a href="resources.html">resources</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported">
-						<a href="../enums/expressions.systemvariabletypeid.html" class="tsd-kind-icon">System<wbr>Variable<wbr>Type<wbr>Id</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/expressions.expressiondataarray.html" class="tsd-kind-icon">Expression<wbr>Data<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="expressions.html#expressiondatatype" class="tsd-kind-icon">Expression<wbr>Data<wbr>Type</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="expressions.html#simpleexpressiondata" class="tsd-kind-icon">Simple<wbr>Expression<wbr>Data</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported">
-						<a href="expressions.html#internalprovider" class="tsd-kind-icon">internal<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="expressions.html#evaluate" class="tsd-kind-icon">evaluate</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="expressions.html#evaluateasarray" class="tsd-kind-icon">evaluate<wbr>AsArray</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="expressions.html#evaluateasdate" class="tsd-kind-icon">evaluate<wbr>AsDate</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="expressions.html#evaluateasnumber" class="tsd-kind-icon">evaluate<wbr>AsNumber</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="expressions.html#evaluateasstring" class="tsd-kind-icon">evaluate<wbr>AsString</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported">
-						<a href="expressions.html#readvalue" class="tsd-kind-icon">read<wbr>Value</a>
 					</li>
 				</ul>
 			</nav>
@@ -377,65 +364,23 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>
