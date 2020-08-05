@@ -8,7 +8,7 @@ A comprehensive manual can be found [here](http://zeiss-piweb.github.io/PiWeb-Va
 
 ## Quickstart
 
-In order to create your first own variable extension, you should be familiar with **JavaScript** and **Json**. As JavaScript is untyped, we suggest you to develop your extension using **TypeScript**.  
+Variable extensions were introduced with **PiWeb 7.8**. In order to create your first own variable extension, you should be familiar with **JavaScript** and **Json**. As JavaScript is untyped, we suggest you to develop your extension using **TypeScript**.  
 
 PiWeb searches for extensions in several locations. Ordered by their priority, these are:
 
@@ -45,7 +45,7 @@ The package configuration contains static parameters of your extension. A comple
 		"type": "variable",
 		"variables": {
 			"ExampleVariable":{
-				"title" : "Example",
+				"title" : "Example"
 			}
 		}
 	}
@@ -53,7 +53,7 @@ The package configuration contains static parameters of your extension. A comple
 ```
 
 
-### 3. Create the file `tsconfic.json`
+### 3. Create the file `tsconfig.json`
 
 It contains necessary information for the typescript compiler, like input and output directories and compiler switches. Just copy the code below and you'll be fine.
 
