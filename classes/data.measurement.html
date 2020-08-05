@@ -67,6 +67,14 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Describes a measurement of an inspection plan part. A measurement is composed of measurement values that are associated to characteristics.
+						The characteristics are the children of the part to which the measurement is associated.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -134,6 +142,8 @@
 									<li>Defined in data/measurements.ts:195</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -165,6 +175,8 @@
 							<li>Defined in data/measurements.ts:195</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="attributes" class="tsd-anchor"></a>
@@ -176,6 +188,11 @@
 							<li>Defined in data/measurements.ts:180</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the attributes of this measurement.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="measurementid" class="tsd-anchor"></a>
@@ -186,6 +203,8 @@
 							<li>Defined in data/measurements.ts:185</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="partid" class="tsd-anchor"></a>
@@ -196,6 +215,8 @@
 							<li>Defined in data/measurements.ts:190</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -203,22 +224,46 @@
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="allmeasurementvalues" class="tsd-anchor"></a>
 					<h3>all<wbr>Measurement<wbr>Values</h3>
-					<div class="tsd-signature tsd-kind-icon">all<wbr>Measurement<wbr>Values<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in data/measurements.ts:254</li>
-						</ul>
-					</aside>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> allMeasurementValues<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in data/measurements.ts:254</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an iter over all values that are associated to this measurement. In case you fetched the measurements without values, the set is empty.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="valuecount" class="tsd-anchor"></a>
 					<h3>value<wbr>Count</h3>
-					<div class="tsd-signature tsd-kind-icon">value<wbr>Count<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in data/measurements.ts:246</li>
-						</ul>
-					</aside>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> valueCount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in data/measurements.ts:246</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the number of measurement values associated to this measurement.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -236,10 +281,18 @@
 									<li>Defined in data/measurements.ts:233</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the measurement value that is associated to the specified characteristic or <code>undefined</code> if the measurement contains no such measurement value.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>entity: <a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The inspection plan characteristic to search the value for.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a></h4>
@@ -259,6 +312,8 @@
 									<li>Defined in data/measurements.ts:262</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a>
 								<span class="tsd-signature-symbol"> | </span>
 								<span class="tsd-signature-type">undefined</span>
@@ -279,6 +334,8 @@
 									<li>Defined in data/measurements.ts:216</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -296,6 +353,8 @@
 									<li>Defined in data/measurements.ts:224</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -313,6 +372,11 @@
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/data.html">data</a>
+						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-external-module">
+								<a href="../modules/data.wellknownkeys.html">Well<wbr>Known<wbr>Keys</a>
+							</li>
+						</ul>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/environment.html">environment</a>
@@ -330,10 +394,16 @@
 						<a href="../modules/logger.html">logger</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/package.html">package</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/parameters.html">parameters</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/resources.html">resources</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/tips.html">tips</a>
 					</li>
 				</ul>
 			</nav>

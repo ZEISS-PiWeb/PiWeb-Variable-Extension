@@ -1,0 +1,379 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>package | PiWeb Variable Extension API Reference</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">PiWeb Variable Extension API Reference</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="package.html">package</a>
+				</li>
+			</ul>
+			<h1>External module package</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<h2 id="package-definition">Package Definition</h2>
+					<p>In the quickstart we already created a very simple package definition in the file <strong>package.json</strong>. Although it&#39;s sufficient to get us started, there are a lot more settings to be discovered.</p>
+					<p><br/><a id="markdown-localization" name="localization"></a></p>
+					<h3 id="localization">Localization</h3>
+					<p>Every text that appears in the user interface of PiWeb can be localized. Simply replace the plain text with a localization dictionary:</p>
+					<pre><code class="lang-json">{
+    <span class="hljs-attr">"piweb_extension"</span>: {        
+        <span class="hljs-attr">"display"</span>: <span class="hljs-string">"MyExtension"</span>        
+    }
+}
+</code></pre>
+					<pre><code class="lang-json">{
+    <span class="hljs-attr">"piweb_extension"</span>: {        
+        <span class="hljs-attr">"display"</span>: {
+            <span class="hljs-attr">""</span> : <span class="hljs-string">"My invariant Extension"</span>,
+            <span class="hljs-attr">"en-US"</span>: <span class="hljs-string">"My Extension"</span>,
+            <span class="hljs-attr">"de-DE"</span>: <span class="hljs-string">"Meine Erweiterung"</span>
+        }   
+    }
+}
+</code></pre>
+					<p>As you can see, the localized version contains an entry for the invariant culture, which is also used as a fallback value in case the required culture is not translated. Later in this chapter, all localizable properties are marked as <code>localizable string</code> properties.</p>
+					<p><br/><a id="markdown-dictionaries" name="dictionaries"></a></p>
+					<h3 id="dictionaries">Dictionaries</h3>
+					<p>Some properties are marked as <code>dictionary</code>, which means they are accepting an object with custom keys and a defined value. In the example below, the <code>items</code> property accepts a dictionary, and <code>myFirstItem</code> as well as <code>mySecondItem</code> are user defined entries in this dictionary.</p>
+					<pre><code class="lang-json">{
+    <span class="hljs-attr">"items"</span>: {
+        <span class="hljs-attr">"myFirstItem"</span>: {
+            <span class="hljs-attr">"name"</span> : <span class="hljs-string">"My first item"</span>,
+            <span class="hljs-attr">"value"</span> : <span class="hljs-string">"red"</span>
+        },
+        <span class="hljs-attr">"mySecondItem"</span>: {
+            <span class="hljs-attr">"name"</span> : <span class="hljs-string">"My second item"</span>,
+            <span class="hljs-attr">"value"</span> : <span class="hljs-string">"green"</span>
+        }  
+    }
+}
+</code></pre>
+					<p><br/><a id="markdown-enumerations" name="enumerations"></a></p>
+					<h3 id="enumerations">Enumerations</h3>
+					<p>The <code>enumeration</code> datatype indicates that only certain <strong>strings</strong> are accepted. The set of accepted strings is listed in the description of the property.</p>
+					<p><br/><a id="markdown-package-format" name="package-format"></a></p>
+					<h3 id="package-format">Package Format</h3>
+					<p><br/><a id="markdown-structure" name="structure"></a></p>
+					<h4 id="structure">Structure</h4>
+					<ul>
+						<li><a href="#package-structure-name">name <code>string</code></a></li>
+						<li><a href="#package-structure-version">version <code>string</code></a></li>
+						<li><a href="#package-structure-main">main <code>string</code></a></li>
+						<li><a href="#package-structure-engines">engines <code>object</code></a><ul>
+								<li><a href="#package-structure-engines-piweb">piweb <code>string</code></a></li>
+							</ul>
+						</li>
+						<li><a href="#piweb-actions">piweb_actions <code>object</code></a><ul>
+								<li><a href="#package-structure-actions-load">load <code>string</code></a></li>
+							</ul>
+						</li>
+						<li><a href="#piweb-extensions">piweb_extension <code>object</code></a><ul>
+								<li><a href="#package-structure-extensions-type">type <code>enumeration</code></a> </li>
+								<li><a href="#package-structure-extensions-categories">categories <code>dictionary</code></a><ul>
+										<li><a href="#package-structure-extensions-categories-name">name <code>localizable string</code></a></li>
+										<li><a href="#package-structure-extensions-categories-priority">priority <code>number</code></a></li>
+									</ul>
+								</li>
+								<li><a href="#package-structure-extensions-variables">variables <code>dictionary</code></a><ul>
+										<li><a href="#package-structure-extensions-variables-title">title <code>localizable string</code></a>           </li>
+										<li><a href="#package-structure-extensions-variables-category">category <code>string</code></a>          </li>
+										<li><a href="#package-structure-extensions-variables-parameters">parameters <code>dictionary</code></a><ul>
+												<li><a href="#package-structure-extensions-variables-parameters-name">name <code>localizable string</code></a></li>
+												<li><a href="#package-structure-extensions-variables-parameters-description">description <code>localizable string</code></a></li>
+												<li><a href="#package-structure-extensions-variables-parameters-datatype">datatype <code>enumeration</code></a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<p><br/><a id="markdown-top-level-properties" name="top-level-properties"></a></p>
+					<h4 id="top-level-properties">Top Level Properties</h4>
+					<p><br/><a id="package-structure-name" name="package-structure-name"></a>
+					<strong>name <code>string</code></strong></p>
+					<p>Custom string that is used to identify the package internally. Must be composed from lower case characters, digits and a set of special characters:
+					<code>&#39;$&#39;, &#39;-&#39;, &#39;_&#39;, &#39;.&#39;, &#39;+&#39;, &#39;!&#39;, &#39;*&#39;, &#39;\&#39;&#39;, &#39;(&#39;, &#39;)&#39;, &#39;,&#39;</code>. It must have a length between 1 and 214 characters and may not start with a dot (<code>.</code>) or an underscore (<code>_</code>).</p>
+					<p><br/><a id="package-structure-version" name="package-structure-version"></a>
+					<strong>version <code>string</code></strong></p>
+					<p>A valid semantic version string containing three numbers, separated by dots. For more information about semantic versioning, visit the <a href="http://semver.org/">project website</a>.</p>
+					<p><br/><a id="package-structure-main" name="package-structure-main"></a>
+					<strong>main <code>string</code></strong></p>
+					<p>Path to folder that contains the <code>index.js</code> file. In case you used typescript, it is the value of the property <code>outDir</code> in the <code>tsconfig.json</code> file.</p>
+					<p><br/><a id="package-structure-engines" name="package-structure-engines"></a>
+					<strong>engines <code>object</code></strong></p>
+					<p>Defines the supported engine versions of this variable. Please read the chapter &#39;<a href="#engines">engines</a>&#39; for further information.</p>
+					<p><br/><a id="package-structure-piweb-actions" name="package-structure-piweb-actions"></a>
+					<strong>piweb_actions <code>object</code></strong></p>
+					<p>Defines additional actions. Please read the chapter &#39;<a href="#piweb-actions">PiWeb actions</a>&#39; for further information.</p>
+					<p><br/><a id="package-structure-piweb-extension" name="package-structure-piweb-extension"></a>
+					<strong>piweb_extension <code>object</code></strong></p>
+					<p>Defines the content of the extension. Please read the chapter &#39;<a href="#piweb-extensions">PiWeb extensions</a>&#39; for further information.</p>
+					<p><br/><a id="markdown-engines" name="engines"></a></p>
+					<h4 id="engines">Engines</h4>
+					<p><br/><a id="package-structure-engines-piweb" name="package-structure-engines-piweb"></a>
+					<strong>piweb <code>string</code></strong></p>
+					<p>A valid semantic version string containing three numbers, separated by dots. It identifies the toolset that PiWeb will use to execute the extension. For more information about semantic versioning, visit the <a href="http://semver.org/">project website</a>.</p>
+					<p><br/><a id="markdown-piweb-actions" name="piweb-actions"></a></p>
+					<h4 id="piweb-actions">PiWeb Actions</h4>
+					<p><br/><a id="package-structure-actions-load" name="package-structure-actions-load"></a>
+					<strong>load <code>string</code></strong></p>
+					<p>A string describing actions, that will be executed when the package loads. Currently, the only recognized value is <code>compile_typescript</code>, which will trigger the typescript compiler.</p>
+					<p><br/><a id="markdown-piweb-extensions" name="piweb-extensions"></a></p>
+					<h4 id="piweb-extensions">PiWeb Extensions</h4>
+					<p><br/><a id="package-structure-extensions-type" name="package-structure-extensions-type"></a>
+					<strong>type <code>enumeration</code></strong></p>
+					<p>Identifies the extension type. Variable extensions use the identifier <code>variable</code>.</p>
+					<p><br/><a id="package-structure-extensions-categories" name="package-structure-extensions-categories"></a>
+					<strong>categories <code>dictionary</code></strong></p>
+					<p>Describes additional categories for the variable editor in PiWeb Designer. Please read the chapter &#39;<a href="#categories">categories</a>&#39; for further information.</p>
+					<p><br/><a id="package-structure-extensions-variables" name="package-structure-extensions-variables"></a>
+					<strong>variables <code>dictionary</code></strong></p>
+					<p>Describes the variables that are defined by the package. The actual variable name is the dictionary key. The variable name can be retrieved with the <code>piweb.environment.variableName</code> property.</p>
+					<p>Please read the chapter &#39;<a href="#variables">variables</a>&#39; for further information.</p>
+					<p><br/><a id="markdown-categories" name="categories"></a></p>
+					<h4 id="categories">Categories</h4>
+					<p><br/><a id="package-structure-extensions-categories-name" name="package-structure-extensions-categories-name"></a>
+					<strong>name <code>localizable string</code></strong></p>
+					<p>The name of the category that is displayed in the variable editor.</p>
+					<p><br/><a id="package-structure-extensions-categories-priority" name="package-structure-extensions-categories-priority"></a>
+					<strong>priority <code>number</code></strong></p>
+					<p>The priority determines where the category is placed relative to the existing categories. </p>
+					<p><br/><a id="markdown-variables" name="variables"></a></p>
+					<h4 id="variables">Variables</h4>
+					<p><br/><a id="package-structure-extensions-variables-title" name="package-structure-extensions-variables-title"></a>
+					<strong>title <code>localizable string</code></strong></p>
+					<p>Sets the display name of the variable in the variable editor.</p>
+					<p><br/><a id="package-structure-extensions-variables-category" name="package-structure-extensions-variables-category"></a>
+					<strong>category <code>string</code></strong></p>
+					<p>Sets the category under which the variable appears in the PiWeb variable editor. The value must appear as dictionary key in the <a href="#package-structure-extensions-categories"><code>categories</code></a> dictionary or be equal to one of the built in category keys of PiWeb:</p>
+					<table>
+						<thead>
+							<tr>
+								<th>Key</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><strong><code>Global</code></strong></td>
+								<td>Common variables</td>
+							</tr>
+							<tr>
+								<td><strong><code>Math</code></strong></td>
+								<td>Mathematical variables</td>
+							</tr>
+							<tr>
+								<td><strong><code>String</code></strong></td>
+								<td>Character string variables</td>
+							</tr>
+							<tr>
+								<td><strong><code>TimeSpan</code></strong></td>
+								<td>Date- and time variables</td>
+							</tr>
+							<tr>
+								<td><strong><code>List</code></strong></td>
+								<td>Variables to work with lists</td>
+							</tr>
+							<tr>
+								<td><strong><code>Comparison</code></strong></td>
+								<td>Variables to compare values</td>
+							</tr>
+							<tr>
+								<td><strong><code>TypeConversions</code></strong></td>
+								<td>Variables to convert values</td>
+							</tr>
+							<tr>
+								<td><strong><code>UserDefined</code></strong></td>
+								<td>User defined variables <strong>(default)</strong></td>
+							</tr>
+						</tbody>
+					</table>
+					<p><br/><a id="package-structure-extensions-variables-parameters" name="package-structure-extensions-variables-parameters"></a></p>
+					<h4 id="parameters">Parameters</h4>
+					<p>Describes a dictionary of parameters that can be fetched when calculating the variables result. The key is the parameter name, by which the value can be accessed.</p>
+					<pre><code class="lang-typescript">piweb.parameters.getParameter(<span class="hljs-string">"myparameter"</span>);
+</code></pre>
+					<p><br/><a id="package-structure-extensions-variables-parameters-name" name="package-structure-extensions-variables-parameters-name"></a>
+					<strong>name <code>localizable string</code></strong></p>
+					<p>Describes the localizable name of the parameter that is displayed in the variable Editor.</p>
+					<p><br/><a id="package-structure-extensions-variables-parameters-description" name="package-structure-extensions-variables-parameters-description"></a>
+					<strong>description <code>localizable string</code></strong></p>
+					<p>Describes the localizable description of the parameter that is displayed as tooltip in the variable Editor.</p>
+					<p><br/><a id="package-structure-extensions-variables-parameters-datatype" name="package-structure-extensions-variables-parameters-datatype"></a>
+					<strong>datatype <code>enumeration</code></strong></p>
+					<p>Describes the desired datatype of the parameter. The datatype is  used to filter user input in the variable editor. It&#39;s still possible to pass all kind of data into the parameter. Valid values for this property are <code>integer</code>, <code>double</code>, <code>string</code> and <code>datetime</code>.</p>
+				</div>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="index.html">Index</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="data.html">data</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="environment.html">environment</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="events.html">events</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="expressions.html">expressions</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="format.html">format</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="logger.html">logger</a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="package.html">package</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="parameters.html">parameters</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="resources.html">resources</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="tips.html">tips</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

@@ -67,6 +67,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Defines the datatype, entity and other parameters of an attribute with a specific K value.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -113,22 +120,49 @@
 									<li>Defined in data/configuration.ts:74</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>key: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>An unsigned short to identify the attribute.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>description: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>An unlocalized description text of the attribute.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>dataType: <a href="../modules/data.html#attributetype" class="tsd-signature-type">AttributeType</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The datatype of the values of the attribute.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>entityType: <a href="../modules/data.html#configurationentity" class="tsd-signature-type">ConfigurationEntity</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The entity type this attribute belongs to.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>catalogId: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The id of the <a href="data.catalog.html">Catalog</a> that is used by this attribute.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="data.attributedefinition.html" class="tsd-signature-type">AttributeDefinition</a></h4>
@@ -147,6 +181,12 @@
 							<li>Defined in data/configuration.ts:74</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>In case the <code>dataType</code> is <code>catalog</code>, this field contains the id of the <a href="data.catalog.html">Catalog</a> that is used by this attribute.
+							You can pass the id or the whole attribute definition into a <a href="data.catalogcollection.html">CatalogCollection</a> to get the <a href="data.catalog.html">Catalog</a>.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="datatype" class="tsd-anchor"></a>
@@ -157,6 +197,11 @@
 							<li>Defined in data/configuration.ts:63</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The datatype of the values of the attribute.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="description" class="tsd-anchor"></a>
@@ -167,6 +212,11 @@
 							<li>Defined in data/configuration.ts:58</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An unlocalized description text of the attribute.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="entitytype" class="tsd-anchor"></a>
@@ -177,6 +227,11 @@
 							<li>Defined in data/configuration.ts:68</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The entity type this attribute belongs to.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="key" class="tsd-anchor"></a>
@@ -187,6 +242,11 @@
 							<li>Defined in data/configuration.ts:53</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An unsigned short to identify the attribute.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -201,6 +261,11 @@
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/data.html">data</a>
+						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-external-module">
+								<a href="../modules/data.wellknownkeys.html">Well<wbr>Known<wbr>Keys</a>
+							</li>
+						</ul>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/environment.html">environment</a>
@@ -218,10 +283,16 @@
 						<a href="../modules/logger.html">logger</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/package.html">package</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/parameters.html">parameters</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/resources.html">resources</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/tips.html">tips</a>
 					</li>
 				</ul>
 			</nav>

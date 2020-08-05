@@ -67,6 +67,18 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Acts as an accessibility layer for a range of defect plots.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>version</dt>
+						<dd><p>1.1</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -126,6 +138,8 @@
 									<li>Defined in data/defect.ts:257</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -142,12 +156,24 @@
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="length" class="tsd-anchor"></a>
 					<h3>length</h3>
-					<div class="tsd-signature tsd-kind-icon">length<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in data/defect.ts:295</li>
-						</ul>
-					</aside>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> length<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in data/defect.ts:295</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the total number of defects stored in the collection.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -165,6 +191,8 @@
 									<li>Defined in data/defect.ts:281</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="data.defect.html" class="tsd-signature-type">Defect</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -182,10 +210,40 @@
 									<li>Defined in data/defect.ts:338</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the defects that associated with the specified entity. The following associations are assumed:</p>
+								</div>
+								<table>
+									<thead>
+										<tr>
+											<th>Entity</th>
+											<th>Association</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><a href="data.measurement.html">Measurement</a></td>
+											<td>The measurement of the measurement value to which the defects are attached</td>
+										</tr>
+										<tr>
+											<td><a href="data.measurementvalue.html">MeasurementValue</a></td>
+											<td>The measurement value to which the defects are attached</td>
+										</tr>
+										<tr>
+											<td><a href="data.inspectionplanitem.html">InspectionPlanItem</a></td>
+											<td>The characteristic of the value to which the defects are attached</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>entity: <a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol"> | </span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol"> | </span><a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A measurement, measurement value or inspection plan item.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.defect.html" class="tsd-signature-type">Defect</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -205,10 +263,40 @@
 									<li>Defined in data/defect.ts:316</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the defect plots that are associated with the specified entity. The following associations are assumed:</p>
+								</div>
+								<table>
+									<thead>
+										<tr>
+											<th>Entity</th>
+											<th>Association</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><a href="data.measurement.html">Measurement</a></td>
+											<td>The measurement of the measurement value to which the plot is attached</td>
+										</tr>
+										<tr>
+											<td><a href="data.measurementvalue.html">MeasurementValue</a></td>
+											<td>The measurement value to which the plot is attached</td>
+										</tr>
+										<tr>
+											<td><a href="data.inspectionplanitem.html">InspectionPlanItem</a></td>
+											<td>The characteristic of the value to which the plot is attached</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>entity: <a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol"> | </span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol"> | </span><a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A measurement, measurement value or inspection plan item.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.defectplot.html" class="tsd-signature-type">DefectPlot</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -228,6 +316,8 @@
 									<li>Defined in data/defect.ts:353</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="data.defect.html" class="tsd-signature-type">Defect</a>
 								<span class="tsd-signature-symbol"> | </span>
 								<span class="tsd-signature-type">undefined</span>
@@ -248,6 +338,11 @@
 									<li>Defined in data/defect.ts:302</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an iterator over all plots stored in the collection.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.defectplot.html" class="tsd-signature-type">DefectPlot</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -265,6 +360,11 @@
 									<li>Defined in data/defect.ts:288</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an iter over all defects.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.defect.html" class="tsd-signature-type">Defect</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -282,6 +382,11 @@
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/data.html">data</a>
+						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-external-module">
+								<a href="../modules/data.wellknownkeys.html">Well<wbr>Known<wbr>Keys</a>
+							</li>
+						</ul>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/environment.html">environment</a>
@@ -299,10 +404,16 @@
 						<a href="../modules/logger.html">logger</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/package.html">package</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/parameters.html">parameters</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/resources.html">resources</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/tips.html">tips</a>
 					</li>
 				</ul>
 			</nav>

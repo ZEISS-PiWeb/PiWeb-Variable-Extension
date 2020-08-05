@@ -67,6 +67,22 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Describes a list of raw data information with additional functions to access certain entries. You can iterate over the collection like the following:</p>
+					</div>
+					<ul>
+						<li><pre><code class="lang-TypeScript"><span class="hljs-keyword">const</span> rawDataCollection = piweb.data.getRawDataCollection();
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> rawDataItem of rawDataCollection)
+{
+ ...
+}
+</code></pre>
+						</li>
+					</ul>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -119,6 +135,8 @@
 									<li>Defined in data/raw_data.ts:185</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -135,12 +153,24 @@
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="length" class="tsd-anchor"></a>
 					<h3>length</h3>
-					<div class="tsd-signature tsd-kind-icon">length<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in data/raw_data.ts:212</li>
-						</ul>
-					</aside>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> length<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in data/raw_data.ts:212</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the total number of items in this collection.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -158,6 +188,8 @@
 									<li>Defined in data/raw_data.ts:197</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="data.rawdataitem.html" class="tsd-signature-type">RawDataItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -175,10 +207,18 @@
 									<li>Defined in data/raw_data.ts:243</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the raw data items that are associated to the specified entity.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>entity: <a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a><span class="tsd-signature-symbol"> | </span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol"> | </span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An instance of a raw data entity.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.rawdataitem.html" class="tsd-signature-type">RawDataItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -198,10 +238,18 @@
 									<li>Defined in data/raw_data.ts:220</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the items that match one or more of the specified filter strings.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>wildcards: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>One or more filter strings. Wildcards like &#39;*&#39; are allowed.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.rawdataitem.html" class="tsd-signature-type">RawDataItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -221,6 +269,8 @@
 									<li>Defined in data/raw_data.ts:261</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="data.rawdataitem.html" class="tsd-signature-type">RawDataItem</a>
 								<span class="tsd-signature-symbol"> | </span>
 								<span class="tsd-signature-type">undefined</span>
@@ -241,6 +291,11 @@
 									<li>Defined in data/raw_data.ts:204</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an iter over all raw data items.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.rawdataitem.html" class="tsd-signature-type">RawDataItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -258,6 +313,11 @@
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/data.html">data</a>
+						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-external-module">
+								<a href="../modules/data.wellknownkeys.html">Well<wbr>Known<wbr>Keys</a>
+							</li>
+						</ul>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/environment.html">environment</a>
@@ -275,10 +335,16 @@
 						<a href="../modules/logger.html">logger</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/package.html">package</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/parameters.html">parameters</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/resources.html">resources</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/tips.html">tips</a>
 					</li>
 				</ul>
 			</nav>

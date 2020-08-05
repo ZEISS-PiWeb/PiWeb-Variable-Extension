@@ -67,6 +67,19 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Describes a set of inspection plan items. It offers a wide range of functions to improve its accessibility. You can iterate over the collection like the following:</p>
+					</div>
+					<pre><code class="lang-TypeScript"><span class="hljs-keyword">const</span> inspectionPlanCollection = piweb.data.getInspectionPlanCollection();
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> item of inspectionPlanCollection)
+{
+    ...
+}
+</code></pre>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -130,6 +143,8 @@
 									<li>Defined in data/inspection.ts:178</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -146,12 +161,24 @@
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="length" class="tsd-anchor"></a>
 					<h3>length</h3>
-					<div class="tsd-signature tsd-kind-icon">length<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in data/inspection.ts:212</li>
-						</ul>
-					</aside>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> length<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in data/inspection.ts:212</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the total number of items stored in the collection.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -169,6 +196,8 @@
 									<li>Defined in data/inspection.ts:197</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -186,10 +215,40 @@
 									<li>Defined in data/inspection.ts:240</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the inspection plan item that associated to the the specified entity or <code>undefined</code> if the collection contains no such inspection plan item. The following associations are assumed:</p>
+								</div>
+								<table>
+									<thead>
+										<tr>
+											<th>Entity</th>
+											<th>Association</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><a href="data.measurement.html">Measurement</a></td>
+											<td>The part to which the measurement is attached</td>
+										</tr>
+										<tr>
+											<td><a href="data.measurementvalue.html">MeasurementValue</a></td>
+											<td>The characteristic to which the measurement value is attached</td>
+										</tr>
+										<tr>
+											<td><a href="data.rawdataitem.html">RawDataItem</a></td>
+											<td>The part or characteristic to which the raw data is attached</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>entity: <a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol"> | </span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol"> | </span><a href="data.rawdataitem.html" class="tsd-signature-type">RawDataItem</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A measurement, measurement value or raw data item.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a></h4>
@@ -209,10 +268,18 @@
 									<li>Defined in data/inspection.ts:260</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the inspection plan item that is identified by the specified path or <code>undefined</code> if the collection contains no such inspection plan item.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An inspection plan path.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a></h4>
@@ -232,10 +299,18 @@
 									<li>Defined in data/inspection.ts:296</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the child items of the specified inspection plan item or. Please be aware that only those children are returned, that are included in the binding of the element.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>item: <a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The item whose children are requested.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -255,10 +330,18 @@
 									<li>Defined in data/inspection.ts:270</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the parent item of the specified inspection plan item or <code>undefined</code> if the item has no parent, or the collection doesn&#39;t contain it.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>item: <a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The item whose parent is requested.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a></h4>
@@ -278,10 +361,18 @@
 									<li>Defined in data/inspection.ts:282</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the parent part of the specified inspection plan item or <code>undefined</code> if the item has no parent, or the collection doesn&#39;t contain it.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>item: <a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The item whose parent part is requested.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a></h4>
@@ -301,6 +392,8 @@
 									<li>Defined in data/inspection.ts:303</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a>
 								<span class="tsd-signature-symbol"> | </span>
 								<span class="tsd-signature-type">undefined</span>
@@ -321,6 +414,11 @@
 									<li>Defined in data/inspection.ts:219</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an iterator over all characteristics stored in the collection.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -338,6 +436,11 @@
 									<li>Defined in data/inspection.ts:226</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an iterator over all parts stored in the collection.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -355,6 +458,11 @@
 									<li>Defined in data/inspection.ts:204</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an iter over all inspection plan items.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -372,6 +480,11 @@
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/data.html">data</a>
+						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-external-module">
+								<a href="../modules/data.wellknownkeys.html">Well<wbr>Known<wbr>Keys</a>
+							</li>
+						</ul>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/environment.html">environment</a>
@@ -389,10 +502,16 @@
 						<a href="../modules/logger.html">logger</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/package.html">package</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/parameters.html">parameters</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/resources.html">resources</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/tips.html">tips</a>
 					</li>
 				</ul>
 			</nav>
