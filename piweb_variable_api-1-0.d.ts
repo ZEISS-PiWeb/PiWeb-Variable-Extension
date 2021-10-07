@@ -885,6 +885,8 @@ declare module "piweb/data/defect" {
 	 * Sets a value indicating whether this plot needs to fetch defects.
 	 * @param value
 	 * @version 1.1
+	 * @deprecated Use the property `fetch_defects` in the [`package.json`](package.html#package-structure-extensions-fetch-defects) instead.
+	 * @host
 	 */
 	export function setFetchDefects(value: boolean): void;
 	/**
@@ -1917,12 +1919,7 @@ declare module "piweb/data/raw_data" {
 	 * function getRawDataCollection() : RawDataCollection;
 	 * ```
 	 *
-	 * You can specify the entity from which you wish to get the raw data, e.g. measured values or characteristics. The default behavior is to return all raw data, which can be quite slow, especially when the plot is bound to many measurement values.
-	 *
-	 * ```TypeScript
-	 * function setRawDataSources( Iterable<RawDataEntity> sources ) : void;
-	 * function getRawDataSources() : Iterable<RawDataEntity>;
-	 * ```
+	 * You can specify the entity from which you wish to get the raw data in the package definition.
 	 */
 	export function getRawDataCollection(): RawDataCollection;
 	/**
@@ -1940,6 +1937,7 @@ declare module "piweb/data/raw_data" {
 	 * from all entities, including measurement values. When the databinding of the plot extension element features a lot of characteristics
 	 * and measurements, the raw data fetching can have a large performance impact.
 	 * @param sources
+	 * @deprecated Use the property `raw_data_sources` in the [`package.json`](package.html#package-structure-extensions-raw-data-sources) instead.
 	 */
 	export function setRawDataSources(sources: Iterable<RawDataEntity>): void;
 	/**
@@ -2106,12 +2104,8 @@ declare module "piweb/data/volume" {
 	 * function getVolumeCollection() : VolumeCollection;
 	 * ```
 	 *
-	 * You can specify the entity from which you wish to get the volume, e.g. measured values or characteristics. The default behavior is to return no volumes.
+	 * You can specify the entity from which you wish to get the volume in the package definition.
 	 *
-	 * ```TypeScript
-	 * function setVolumeSources( Iterable<RawDataEntity> sources ) : void;
-	 * function getVolumeSources() : Iterable<RawDataEntity>;
-	 * ```
 	 * @version 1.1
 	 */
 	export function getVolumeCollection(): VolumeCollection;
@@ -2119,6 +2113,7 @@ declare module "piweb/data/volume" {
 	 * Sets the raw data entities from which the plot extension fetches the volumes.
 	 * @param sources
 	 * @version 1.1
+	 * @deprecated Use the property `volume_sources` in the [`package.json`](package.html#package-structure-extensions-volume-sources) instead.
 	 */
 	export function setVolumeSources(sources: Iterable<RawDataEntity>): void;
 	/**
@@ -2303,6 +2298,16 @@ declare module "piweb/data/wellknown_keys" {
 }
 
 
+declare module "piweb/package" {
+	
+}
+
+
+declare module "piweb/package/package" {
+	
+}
+
+
 declare module "piweb/resources/host_binary" {
 	/**
 	 * @module resources
@@ -2319,6 +2324,10 @@ declare module "piweb/resources/host_binary" {
 	     * Gets the size of the binary object in bytes.
 	     */
 	    readonly size: number;
+	    /**
+	     * Gets the id with which the binary can be uniquely identified.
+	     */
+	    readonly id: string;
 	}
 }
 
@@ -2467,6 +2476,16 @@ declare module "piweb/resources/path" {
 	 * The path delimiter: ':'
 	 */
 	export const delimiter: string;
+}
+
+
+declare module "piweb/tips" {
+	
+}
+
+
+declare module "piweb/tips/package" {
+	
 }
 
 
