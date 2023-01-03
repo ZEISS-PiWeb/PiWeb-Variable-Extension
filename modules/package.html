@@ -124,19 +124,21 @@
 							</ul>
 						</li>
 						<li><a href="#piweb-extensions">piweb_extension <code>object</code></a><ul>
-								<li><a href="#package-structure-extensions-type">type <code>enumeration</code></a> </li>
-								<li><a href="#package-structure-extensions-measurement-data-type">measurement_data_type <code>enumeration</code></a></li>
-								<li><a href="#package-structure-extensions-raw-data-sources">raw_data_sources <code>enumeration</code></a></li>
-								<li><a href="#package-structure-extensions-volume-sources">volume_sources <code>string</code></a></li>
-								<li><a href="#package-structure-extensions-fetch-defects">fetch_defects <code>boolean</code></a>    </li>
+								<li><a href="#package-structure-extensions-type">type <code>enumeration</code></a>     </li>
 								<li><a href="#package-structure-extensions-categories">categories <code>dictionary</code></a><ul>
 										<li><a href="#package-structure-extensions-categories-name">name <code>localizable string</code></a></li>
 										<li><a href="#package-structure-extensions-categories-priority">priority <code>number</code></a></li>
 									</ul>
 								</li>
 								<li><a href="#package-structure-extensions-variables">variables <code>dictionary</code></a><ul>
-										<li><a href="#package-structure-extensions-variables-title">title <code>localizable string</code></a>           </li>
-										<li><a href="#package-structure-extensions-variables-category">category <code>string</code></a>          </li>
+										<li><a href="#package-structure-extensions-variables-title">title <code>localizable string</code></a>        </li>
+										<li><a href="#package-structure-extensions-variables-description">description <code>localizable string</code></a>         </li>
+										<li><a href="#package-structure-extensions-variables-category">category <code>string</code></a></li>
+										<li><a href="#package-structure-extensions-measurement-data-type">measurement_data_type <code>enumeration</code></a></li>
+										<li><a href="#package-structure-extensions-raw-data-sources">raw_data_sources <code>enumeration</code></a></li>
+										<li><a href="#package-structure-extensions-volume-sources">volume_sources <code>string</code></a></li>
+										<li><a href="#package-structure-extensions-fetch-defects">fetch_defects <code>boolean</code></a>        </li>
+										<li><a href="#package-structure-extensions-fetch-formplots">fetch_formplots <code>boolean</code></a>              </li>
 										<li><a href="#package-structure-extensions-variables-parameters">parameters <code>dictionary</code></a><ul>
 												<li><a href="#package-structure-extensions-variables-parameters-name">name <code>localizable string</code></a></li>
 												<li><a href="#package-structure-extensions-variables-parameters-description">description <code>localizable string</code></a></li>
@@ -184,18 +186,6 @@
 					<p><br/><a id="package-structure-extensions-type" name="package-structure-extensions-type"></a>
 					<strong>type <code>enumeration</code></strong></p>
 					<p>Identifies the extension type. Variable extensions use the identifier <code>variable</code>.</p>
-					<p><br/><a id="package-structure-extensions-measurement-data-type" name="package-structure-extensions-measurement-data-type"></a>
-					<strong>measurement_data_type <code>enumeration</code></strong></p>
-					<p>Determines, which kind of data is fetched for this extension. Possible values are <code>measurement_values</code>, <code>measurements</code> and <code>none</code>. The default value is <code>measurement_values</code>. Settings this property to <code>measurements</code> or <code>none</code> might improve the loading performance of your extension in case you don&#39;t need measurement values or even measurements.</p>
-					<p><br/><a id="package-structure-extensions-raw-data-sources" name="package-structure-extensions-raw-data-sources"></a>
-					<strong>raw_data_sources <code>enumeration</code></strong></p>
-					<p>Determines, which entities are searched for raw data that can be accessed by the extension. Possible values are <code>part</code>, <code>characteristic</code>, <code>measurement</code>, <code>measurement_value</code> and <code>none</code>. The default value is <code>none</code>. You can specify and array with multiple of these values in case you need raw data from multiple sources. Be aware, that fetching raw data might be very performance intensive.</p>
-					<p><br/><a id="package-structure-extensions-volume-sources" name="package-structure-extensions-volume-sources"></a>
-					<strong>volume_sources <code>enumeration</code></strong></p>
-					<p>Determines, which entities are searched for volume data that can be accessed by the extension. Possible values are <code>part</code>, <code>characteristic</code>, <code>measurement</code>, <code>measurement_value</code> and <code>none</code>. The default value is <code>none</code>. You can specify and array with multiple of these values in case you need volume data from multiple sources. Be aware, that fetching volume data might be very performance intensive.</p>
-					<p><br/><a id="package-structure-extensions-fetch-defects" name="package-structure-extensions-fetch-defects"></a>
-					<strong>fetch_defects <code>boolean</code></strong></p>
-					<p>Determines, whether or not to fetch defect data for the extension. The default value is <code>false</code>. Be aware, that fetching defect data might be very performance intensive.</p>
 					<p><br/><a id="package-structure-extensions-categories" name="package-structure-extensions-categories"></a>
 					<strong>categories <code>dictionary</code></strong></p>
 					<p>Describes additional categories for the variable editor in PiWeb Designer. Please read the chapter &#39;<a href="#categories">categories</a>&#39; for further information.</p>
@@ -216,6 +206,9 @@
 					<p><br/><a id="package-structure-extensions-variables-title" name="package-structure-extensions-variables-title"></a>
 					<strong>title <code>localizable string</code></strong></p>
 					<p>Sets the display name of the variable in the variable editor.</p>
+					<p><br/><a id="package-structure-extensions-variables-description" name="package-structure-extensions-variables-description"></a>
+					<strong>description <code>localizable string</code></strong></p>
+					<p>Sets the description of the variable in the variable editor.</p>
 					<p><br/><a id="package-structure-extensions-variables-category" name="package-structure-extensions-variables-category"></a>
 					<strong>category <code>string</code></strong></p>
 					<p>Sets the category under which the variable appears in the PiWeb variable editor. The value must appear as dictionary key in the <a href="#package-structure-extensions-categories"><code>categories</code></a> dictionary or be equal to one of the built in category keys of PiWeb:</p>
@@ -261,6 +254,21 @@
 							</tr>
 						</tbody>
 					</table>
+					<p><br/><a id="package-structure-extensions-measurement-data-type" name="package-structure-extensions-measurement-data-type"></a>
+					<strong>measurement_data_type <code>enumeration</code></strong></p>
+					<p>Determines, which kind of data is fetched for this extension. Possible values are <code>measurement_values</code>, <code>measurements</code> and <code>none</code>. The default value is <code>measurement_values</code>. Settings this property to <code>measurements</code> or <code>none</code> might improve the loading performance of your extension in case you don&#39;t need measurement values or even measurements.</p>
+					<p><br/><a id="package-structure-extensions-raw-data-sources" name="package-structure-extensions-raw-data-sources"></a>
+					<strong>raw_data_sources <code>enumeration</code></strong></p>
+					<p>Determines, which entities are searched for raw data that can be accessed by the extension. Possible values are <code>part</code>, <code>characteristic</code>, <code>measurement</code>, <code>measurement_value</code> and <code>none</code>. The default value is <code>none</code>. You can specify and array with multiple of these values in case you need raw data from multiple sources. Be aware, that fetching raw data might be very performance intensive.</p>
+					<p><br/><a id="package-structure-extensions-volume-sources" name="package-structure-extensions-volume-sources"></a>
+					<strong>volume_sources <code>enumeration</code></strong></p>
+					<p>Determines, which entities are searched for volume data that can be accessed by the extension. Possible values are <code>part</code>, <code>characteristic</code>, <code>measurement</code>, <code>measurement_value</code> and <code>none</code>. The default value is <code>none</code>. You can specify and array with multiple of these values in case you need volume data from multiple sources. Be aware, that fetching volume data might be very performance intensive.</p>
+					<p><br/><a id="package-structure-extensions-fetch-defects" name="package-structure-extensions-fetch-defects"></a>
+					<strong>fetch_defects <code>boolean</code></strong></p>
+					<p>Determines, whether or not to fetch defect data for the extension. The default value is <code>false</code>. Be aware, that fetching defect data might be very performance intensive.</p>
+					<p><br/><a id="package-structure-extensions-fetch-formplots" name="package-structure-extensions-fetch-formplots"></a>
+					<strong>fetch-formplots <code>boolean</code></strong></p>
+					<p>Determines, whether or not to fetch formplot data for the extension. The default value is <code>false</code>. Be aware, that fetching formplot data might be very performance intensive.</p>
 					<p><br/><a id="package-structure-extensions-variables-parameters" name="package-structure-extensions-variables-parameters"></a></p>
 					<h4 id="parameters">Parameters</h4>
 					<p>Describes a dictionary of parameters that can be fetched when calculating the variables result. The key is the parameter name, by which the value can be accessed.</p>

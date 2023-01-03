@@ -115,6 +115,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/data.defect.html" class="tsd-kind-icon">Defect</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/data.defectcollection.html" class="tsd-kind-icon">Defect<wbr>Collection</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/data.defectplot.html" class="tsd-kind-icon">Defect<wbr>Plot</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/data.elementsystem.html" class="tsd-kind-icon">Element<wbr>System</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/data.inspectionplancollection.html" class="tsd-kind-icon">Inspection<wbr>Plan<wbr>Collection</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/data.inspectionplanitem.html" class="tsd-kind-icon">Inspection<wbr>Plan<wbr>Item</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/data.limit.html" class="tsd-kind-icon">Limit</a></li>
@@ -210,6 +211,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported"><a href="data.html#readcatalogentry" class="tsd-kind-icon">read<wbr>Catalog<wbr>Entry</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported"><a href="data.html#readdefect" class="tsd-kind-icon">read<wbr>Defect</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported"><a href="data.html#readdefectplot" class="tsd-kind-icon">read<wbr>Defect<wbr>Plot</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private"><a href="data.html#readelementsystem" class="tsd-kind-icon">read<wbr>Element<wbr>System</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported"><a href="data.html#readinspectionplanitem" class="tsd-kind-icon">read<wbr>Inspection<wbr>Plan<wbr>Item</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported"><a href="data.html#readmeasurement" class="tsd-kind-icon">read<wbr>Measurement</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported"><a href="data.html#readmeasurementvalue" class="tsd-kind-icon">read<wbr>Measurement<wbr>Value</a></li>
@@ -287,7 +289,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 					<div class="tsd-signature tsd-kind-icon">Plot<wbr>Property<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"string"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"integer"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"float"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"date"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"timespan"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in data/plot.ts:178</li>
+							<li>Defined in data/plot.ts:227</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -302,7 +304,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 					<div class="tsd-signature tsd-kind-icon">Plot<wbr>Property<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in data/plot.ts:194</li>
+							<li>Defined in data/plot.ts:243</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -347,18 +349,13 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 					<div class="tsd-signature tsd-kind-icon">Volume<wbr>Direction<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"x"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"y"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"z"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in data/volume.ts:29</li>
+							<li>Defined in data/volume.ts:28</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Known volume directions / planes</p>
 						</div>
-						<dl class="tsd-comment-tags">
-							<dt>version</dt>
-							<dd><p>1.1</p>
-							</dd>
-						</dl>
 					</div>
 				</section>
 			</section>
@@ -370,7 +367,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 					<div class="tsd-signature tsd-kind-icon">neutral<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;&quot;</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in data/measurements.ts:277</li>
+							<li>Defined in data/measurements.ts:255</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -712,7 +709,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/volume.ts:431</li>
+									<li>Defined in data/volume.ts:424</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -821,7 +818,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/defect.ts:372</li>
+									<li>Defined in data/defect.ts:384</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -830,11 +827,6 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 										The defects are grouped by the measurement value they are associated to. Such a group or bundle is called <a href="../classes/data.defectplot.html">DefectPlot</a>. You can iterate
 									either the defects or the plots by calling the <a href="../classes/data.defectcollection.html#getplots">getPlots</a> method of the collection.</p>
 								</div>
-								<dl class="tsd-comment-tags">
-									<dt>version</dt>
-									<dd><p>1.1</p>
-									</dd>
-								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../classes/data.defectcollection.html" class="tsd-signature-type">DefectCollection</a></h4>
 						</li>
@@ -844,13 +836,13 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 					<a name="getinspectionplancollection" class="tsd-anchor"></a>
 					<h3>get<wbr>Inspection<wbr>Plan<wbr>Collection</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Inspection<wbr>Plan<wbr>Collection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/data.inspectionplancollection.html" class="tsd-signature-type">InspectionPlanCollection</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Inspection<wbr>Plan<wbr>Collection<span class="tsd-signature-symbol">(</span>requestedAttributes<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/data.inspectionplancollection.html" class="tsd-signature-type">InspectionPlanCollection</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/inspection.ts:317</li>
+									<li>Defined in data/inspection.ts:316</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -858,6 +850,12 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 									<p>Returns all inspection plan items that are bound to the plot extension element with databinding. You can change the databinding in PiWeb Designer.</p>
 								</div>
 							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> requestedAttributes: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../classes/data.inspectionplancollection.html" class="tsd-signature-type">InspectionPlanCollection</a></h4>
 						</li>
 					</ul>
@@ -866,13 +864,13 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 					<a name="getmeasurementcollection" class="tsd-anchor"></a>
 					<h3>get<wbr>Measurement<wbr>Collection</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Measurement<wbr>Collection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/data.measurementcollection.html" class="tsd-signature-type">MeasurementCollection</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Measurement<wbr>Collection<span class="tsd-signature-symbol">(</span>requestedAttributes<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/data.measurementcollection.html" class="tsd-signature-type">MeasurementCollection</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/measurements.ts:365</li>
+									<li>Defined in data/measurements.ts:340</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -881,6 +879,12 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 									You can change the databinding and the measurement selection in PiWeb Designer.</p>
 								</div>
 							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> requestedAttributes: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../classes/data.measurementcollection.html" class="tsd-signature-type">MeasurementCollection</a></h4>
 						</li>
 					</ul>
@@ -982,7 +986,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/volume.ts:323</li>
+									<li>Defined in data/volume.ts:318</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -992,11 +996,6 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 								<pre><code class="lang-TypeScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getVolumeCollection</span>(<span class="hljs-params"></span>) : <span class="hljs-title">VolumeCollection</span></span>;
 </code></pre>
 								<p>You can specify the entity from which you wish to get the volume in the package definition.</p>
-								<dl class="tsd-comment-tags">
-									<dt>version</dt>
-									<dd><p>1.1</p>
-									</dd>
-								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../classes/data.volumecollection.html" class="tsd-signature-type">VolumeCollection</a></h4>
 						</li>
@@ -1012,18 +1011,13 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/volume.ts:375</li>
+									<li>Defined in data/volume.ts:368</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Returns the raw data entities from which the plot extension fetches the volumes.</p>
 								</div>
-								<dl class="tsd-comment-tags">
-									<dt>version</dt>
-									<dd><p>1.1</p>
-									</dd>
-								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><a href="data.html#rawdataentity" class="tsd-signature-type">RawDataEntity</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
@@ -1373,7 +1367,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/defect.ts:120</li>
+									<li>Defined in data/defect.ts:117</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1401,7 +1395,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/defect.ts:205</li>
+									<li>Defined in data/defect.ts:218</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1413,6 +1407,31 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../classes/data.defectplot.html" class="tsd-signature-type">DefectPlot</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
+					<a name="readelementsystem" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Element<wbr>System</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Element<wbr>System<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BufferReader</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/data.elementsystem.html" class="tsd-signature-type">ElementSystem</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in data/plot.ts:214</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>source: <span class="tsd-signature-type">BufferReader</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/data.elementsystem.html" class="tsd-signature-type">ElementSystem</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -1451,7 +1470,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/measurements.ts:346</li>
+									<li>Defined in data/measurements.ts:321</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1476,7 +1495,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/measurements.ts:336</li>
+									<li>Defined in data/measurements.ts:311</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1537,7 +1556,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/plot.ts:413</li>
+									<li>Defined in data/plot.ts:462</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1562,7 +1581,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/plot.ts:378</li>
+									<li>Defined in data/plot.ts:427</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1665,7 +1684,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/volume.ts:398</li>
+									<li>Defined in data/volume.ts:391</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1690,7 +1709,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/defect.ts:55</li>
+									<li>Defined in data/defect.ts:53</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1777,7 +1796,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/defect.ts:26</li>
+									<li>Defined in data/defect.ts:25</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1785,9 +1804,6 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 									<p>Sets a value indicating whether this plot needs to fetch defects.</p>
 								</div>
 								<dl class="tsd-comment-tags">
-									<dt>version</dt>
-									<dd><p>1.1</p>
-									</dd>
 									<dt>deprecated</dt>
 									<dd><p>Use the property <code>fetch_defects</code> in the <a href="package.html#package-structure-extensions-fetch-defects"><code>package.json</code></a> instead.</p>
 									</dd>
@@ -1850,7 +1866,7 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/volume.ts:343</li>
+									<li>Defined in data/volume.ts:337</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1858,9 +1874,6 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 									<p>Sets the raw data entities from which the plot extension fetches the volumes.</p>
 								</div>
 								<dl class="tsd-comment-tags">
-									<dt>version</dt>
-									<dd><p>1.1</p>
-									</dd>
 									<dt>deprecated</dt>
 									<dd><p>Use the property <code>volume_sources</code> in the <a href="package.html#package-structure-extensions-volume-sources"><code>package.json</code></a> instead.</p>
 									</dd>
@@ -1973,6 +1986,9 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/data.defectplot.html" class="tsd-kind-icon">Defect<wbr>Plot</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/data.elementsystem.html" class="tsd-kind-icon">Element<wbr>System</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/data.inspectionplancollection.html" class="tsd-kind-icon">Inspection<wbr>Plan<wbr>Collection</a>
@@ -2198,6 +2214,9 @@ piweb.events.on(<span class="hljs-string">"calculate"</span>, calculate);
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported">
 						<a href="data.html#readdefectplot" class="tsd-kind-icon">read<wbr>Defect<wbr>Plot</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
+						<a href="data.html#readelementsystem" class="tsd-kind-icon">read<wbr>Element<wbr>System</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-private tsd-is-not-exported">
 						<a href="data.html#readinspectionplanitem" class="tsd-kind-icon">read<wbr>Inspection<wbr>Plan<wbr>Item</a>
