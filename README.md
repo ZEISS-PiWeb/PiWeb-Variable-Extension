@@ -1,6 +1,7 @@
 # PiWeb Variable Extension
 
-<img style="display:block;margin:auto;" src="gfx/Logo.png" >
+| ![Zeiss IQS Logo](img/logo_128x128.png) | The PiWeb Variable Extension allow you to create your own variables with TypeScript for the quality data management system [ZEISS PiWeb](http://www.zeiss.com/industrial-metrology/en_de/products/software/piweb.html). |
+|-|:-|
 
 ## Reference Manual
 
@@ -18,7 +19,7 @@ PiWeb searches for extensions in several locations. Ordered by their priority, t
 
 The package structure looks like the following:
 
-<img class="framed" src="gfx/folder_structure.png"/>
+<img class="framed" src="img/folder_structure.png"/>
 
 **Hint:** You can download the result of the quickstart guide here:
 
@@ -110,6 +111,6 @@ function calculate() : piweb.expressions.ExpressionDataType {
 
 When we save all files and start PiWeb Designer, we should find our extension in the **User defined** category of the variable editor:
 
-<img src="gfx/toolbox_start.png">
+<img src="img/toolbox_start.png">
 
 For a complete reference, please have a look at the [Index](http://zeiss-piweb.github.io/PiWeb-Variable-Extension).
