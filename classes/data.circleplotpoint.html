@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ElementSystem | PiWeb Variable Extension API Reference</title>
+	<title>CirclePlotPoint | PiWeb Variable Extension API Reference</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/data.html">data</a>
 				</li>
 				<li>
-					<a href="data.elementsystem.html">ElementSystem</a>
+					<a href="data.circleplotpoint.html">CirclePlotPoint</a>
 				</li>
 			</ul>
-			<h1>Class ElementSystem</h1>
+			<h1>Class CirclePlotPoint</h1>
 		</div>
 	</div>
 </header>
@@ -70,15 +70,25 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Describes the transformation of the plot points.</p>
+						<p>Represents a point in a circle plot.</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>version</dt>
+						<dd><p>1.4</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ElementSystem</span>
+						<a href="data.plotpoint.html" class="tsd-signature-type">PlotPoint</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">CirclePlotPoint</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -89,16 +99,17 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-private"><a href="data.elementsystem.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-private"><a href="data.circleplotpoint.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="data.elementsystem.html#axis1" class="tsd-kind-icon">axis1</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="data.elementsystem.html#axis2" class="tsd-kind-icon">axis2</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="data.elementsystem.html#axis3" class="tsd-kind-icon">axis3</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="data.elementsystem.html#origin" class="tsd-kind-icon">origin</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="data.circleplotpoint.html#angle" class="tsd-kind-icon">angle</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="data.circleplotpoint.html#deviation" class="tsd-kind-icon">deviation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="data.circleplotpoint.html#properties" class="tsd-kind-icon">properties</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="data.circleplotpoint.html#state" class="tsd-kind-icon">state</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="data.circleplotpoint.html#tolerance" class="tsd-kind-icon">tolerance</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,17 +117,18 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-private">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Element<wbr>System<span class="tsd-signature-symbol">(</span>axis1<span class="tsd-signature-symbol">: </span><a href="data.vector.html" class="tsd-signature-type">Vector</a>, axis2<span class="tsd-signature-symbol">: </span><a href="data.vector.html" class="tsd-signature-type">Vector</a>, axis3<span class="tsd-signature-symbol">: </span><a href="data.vector.html" class="tsd-signature-type">Vector</a>, origin<span class="tsd-signature-symbol">: </span><a href="data.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.elementsystem.html" class="tsd-signature-type">ElementSystem</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Circle<wbr>Plot<wbr>Point<span class="tsd-signature-symbol">(</span>tolerance<span class="tsd-signature-symbol">: </span><a href="data.plottolerance.html" class="tsd-signature-type">PlotTolerance</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, properties<span class="tsd-signature-symbol">: </span><a href="data.plotpropertycollection.html" class="tsd-signature-type">PlotPropertyCollection</a>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PlotPointState.None</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.Outlier</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.Overlap</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.TiltedForce</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.TiltedAcceleration</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.EvaluationRange</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.Duplicate</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.IgnoreGroove1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.IgnoreGroove2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.AirScanning</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.Virtual</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.Gap</span>, angle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, deviation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.circleplotpoint.html" class="tsd-signature-type">CirclePlotPoint</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="data.plotpoint.html">PlotPoint</a>.<a href="data.plotpoint.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in data/plot/geometry.ts:60</li>
+									<li>Defined in data/plot/point.ts:148</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -124,19 +136,22 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>axis1: <a href="data.vector.html" class="tsd-signature-type">Vector</a></h5>
+									<h5>tolerance: <a href="data.plottolerance.html" class="tsd-signature-type">PlotTolerance</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
 								</li>
 								<li>
-									<h5>axis2: <a href="data.vector.html" class="tsd-signature-type">Vector</a></h5>
+									<h5>properties: <a href="data.plotpropertycollection.html" class="tsd-signature-type">PlotPropertyCollection</a></h5>
 								</li>
 								<li>
-									<h5>axis3: <a href="data.vector.html" class="tsd-signature-type">Vector</a></h5>
+									<h5>state: <span class="tsd-signature-type">PlotPointState.None</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.Outlier</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.Overlap</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.TiltedForce</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.TiltedAcceleration</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.EvaluationRange</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.Duplicate</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.IgnoreGroove1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.IgnoreGroove2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.AirScanning</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.Virtual</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.Gap</span></h5>
 								</li>
 								<li>
-									<h5>origin: <a href="data.vector.html" class="tsd-signature-type">Vector</a></h5>
+									<h5>angle: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>deviation: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="data.elementsystem.html" class="tsd-signature-type">ElementSystem</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="data.circleplotpoint.html" class="tsd-signature-type">CirclePlotPoint</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -144,62 +159,80 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="axis1" class="tsd-anchor"></a>
-					<h3>axis1</h3>
-					<div class="tsd-signature tsd-kind-icon">axis1<span class="tsd-signature-symbol">:</span> <a href="data.vector.html" class="tsd-signature-type">Vector</a></div>
+					<a name="angle" class="tsd-anchor"></a>
+					<h3>angle</h3>
+					<div class="tsd-signature tsd-kind-icon">angle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in data/plot/geometry.ts:75</li>
+							<li>Defined in data/plot/point.ts:169</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>First column of the 4x3 element system</p>
+							<p>Angle of the point in radians.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="axis2" class="tsd-anchor"></a>
-					<h3>axis2</h3>
-					<div class="tsd-signature tsd-kind-icon">axis2<span class="tsd-signature-symbol">:</span> <a href="data.vector.html" class="tsd-signature-type">Vector</a></div>
+					<a name="deviation" class="tsd-anchor"></a>
+					<h3>deviation</h3>
+					<div class="tsd-signature tsd-kind-icon">deviation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in data/plot/geometry.ts:80</li>
+							<li>Defined in data/plot/point.ts:174</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Second column of the 4x3 element system</p>
+							<p>Deviation.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="axis3" class="tsd-anchor"></a>
-					<h3>axis3</h3>
-					<div class="tsd-signature tsd-kind-icon">axis3<span class="tsd-signature-symbol">:</span> <a href="data.vector.html" class="tsd-signature-type">Vector</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="properties" class="tsd-anchor"></a>
+					<h3>properties</h3>
+					<div class="tsd-signature tsd-kind-icon">properties<span class="tsd-signature-symbol">:</span> <a href="data.plotpropertycollection.html" class="tsd-signature-type">PlotPropertyCollection</a></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="data.plotpoint.html">PlotPoint</a>.<a href="data.plotpoint.html#properties">properties</a></p>
 						<ul>
-							<li>Defined in data/plot/geometry.ts:85</li>
+							<li>Defined in data/plot/point.ts:97</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Third column of the 4x3 element system</p>
+							<p>The properties of this point.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="origin" class="tsd-anchor"></a>
-					<h3>origin</h3>
-					<div class="tsd-signature tsd-kind-icon">origin<span class="tsd-signature-symbol">:</span> <a href="data.vector.html" class="tsd-signature-type">Vector</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="state" class="tsd-anchor"></a>
+					<h3>state</h3>
+					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PlotPointState.None</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.Outlier</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.Overlap</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.TiltedForce</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.TiltedAcceleration</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.EvaluationRange</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.Duplicate</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.IgnoreGroove1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.IgnoreGroove2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.AirScanning</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.Virtual</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PlotPointState.Gap</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="data.plotpoint.html">PlotPoint</a>.<a href="data.plotpoint.html#state">state</a></p>
 						<ul>
-							<li>Defined in data/plot/geometry.ts:90</li>
+							<li>Defined in data/plot/point.ts:102</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Fourth column of the 4x3 element system</p>
+							<p>The state of this point.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="tolerance" class="tsd-anchor"></a>
+					<h3>tolerance</h3>
+					<div class="tsd-signature tsd-kind-icon">tolerance<span class="tsd-signature-symbol">:</span> <a href="data.plottolerance.html" class="tsd-signature-type">PlotTolerance</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="data.plotpoint.html">PlotPoint</a>.<a href="data.plotpoint.html#tolerance">tolerance</a></p>
+						<ul>
+							<li>Defined in data/plot/point.ts:92</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The tolerance of this particular point. Fallback to the plot tolerance in case it&#39;s <code>undefined</code>.</p>
 						</div>
 					</div>
 				</section>
@@ -256,22 +289,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="data.elementsystem.html" class="tsd-kind-icon">Element<wbr>System</a>
+						<a href="data.circleplotpoint.html" class="tsd-kind-icon">Circle<wbr>Plot<wbr>Point</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
-								<a href="data.elementsystem.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-private">
+								<a href="data.circleplotpoint.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="data.elementsystem.html#axis1" class="tsd-kind-icon">axis1</a>
+								<a href="data.circleplotpoint.html#angle" class="tsd-kind-icon">angle</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="data.elementsystem.html#axis2" class="tsd-kind-icon">axis2</a>
+								<a href="data.circleplotpoint.html#deviation" class="tsd-kind-icon">deviation</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="data.elementsystem.html#axis3" class="tsd-kind-icon">axis3</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="data.circleplotpoint.html#properties" class="tsd-kind-icon">properties</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="data.elementsystem.html#origin" class="tsd-kind-icon">origin</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="data.circleplotpoint.html#state" class="tsd-kind-icon">state</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="data.circleplotpoint.html#tolerance" class="tsd-kind-icon">tolerance</a>
 							</li>
 						</ul>
 					</li>

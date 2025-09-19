@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MeasurementCollection | PiWeb Variable Extension API Reference</title>
+	<title>MeasurementGroup | PiWeb Variable Extension API Reference</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/data.html">data</a>
 				</li>
 				<li>
-					<a href="data.measurementcollection.html">MeasurementCollection</a>
+					<a href="data.measurementgroup.html">MeasurementGroup</a>
 				</li>
 			</ul>
-			<h1>Class MeasurementCollection</h1>
+			<h1>Class MeasurementGroup</h1>
 		</div>
 	</div>
 </header>
@@ -70,24 +70,23 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A collection of <a href="#measurement"><code>Measurements</code></a>. It offers a wide range of functions to improve its accessibility. You can iterate over the collection like the following:</p>
+						<p>Describes a set of measurements that have been grouped together by explicit or implicit grouping in PiWeb Monitor.</p>
 					</div>
-					<pre><code class="lang-TypeScript"><span class="hljs-keyword">const</span> measurementCollection = piweb.data.getMeasurementCollection();
-<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> measurement of measurementCollection)
-{
-    ...
-}
-</code></pre>
+					<dl class="tsd-comment-tags">
+						<dt>version</dt>
+						<dd><p>1.3</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">MeasurementCollection</span>
+						<a href="data.measurementcollection.html" class="tsd-signature-type">MeasurementCollection</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="data.measurementgroup.html" class="tsd-signature-type">MeasurementGroup</a>
+								<span class="target">MeasurementGroup</span>
 							</li>
 						</ul>
 					</li>
@@ -100,25 +99,31 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-private"><a href="data.measurementcollection.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-private"><a href="data.measurementgroup.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="data.measurementgroup.html#description" class="tsd-kind-icon">description</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="data.measurementcollection.html#length" class="tsd-kind-icon">length</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="data.measurementgroup.html#length" class="tsd-kind-icon">length</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="data.measurementcollection.html#___iterator" class="tsd-kind-icon">__@iterator</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.measurementcollection.html#findmeasurementbyentity" class="tsd-kind-icon">find<wbr>Measurement<wbr>ByEntity</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.measurementcollection.html#findmeasurementsbyentity" class="tsd-kind-icon">find<wbr>Measurements<wbr>ByEntity</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.measurementcollection.html#findvaluebyentity" class="tsd-kind-icon">find<wbr>Value<wbr>ByEntity</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.measurementcollection.html#findvaluesbyentity" class="tsd-kind-icon">find<wbr>Values<wbr>ByEntity</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="data.measurementcollection.html#first" class="tsd-kind-icon">first</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.measurementcollection.html#iter" class="tsd-kind-icon">iter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private"><a href="data.measurementgroup.html#___iterator" class="tsd-kind-icon">__@iterator</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="data.measurementgroup.html#findmeasurementbyentity" class="tsd-kind-icon">find<wbr>Measurement<wbr>ByEntity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="data.measurementgroup.html#findmeasurementsbyentity" class="tsd-kind-icon">find<wbr>Measurements<wbr>ByEntity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="data.measurementgroup.html#findvaluebyentity" class="tsd-kind-icon">find<wbr>Value<wbr>ByEntity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="data.measurementgroup.html#findvaluesbyentity" class="tsd-kind-icon">find<wbr>Values<wbr>ByEntity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private"><a href="data.measurementgroup.html#first" class="tsd-kind-icon">first</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="data.measurementgroup.html#iter" class="tsd-kind-icon">iter</a></li>
 							</ul>
 						</section>
 					</div>
@@ -126,17 +131,18 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-private">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Measurement<wbr>Collection<span class="tsd-signature-symbol">(</span>measurements<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.measurementcollection.html" class="tsd-signature-type">MeasurementCollection</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Measurement<wbr>Group<span class="tsd-signature-symbol">(</span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, measurements<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.measurementgroup.html" class="tsd-signature-type">MeasurementGroup</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="data.measurementcollection.html">MeasurementCollection</a>.<a href="data.measurementcollection.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in data/measurements.ts:105</li>
+									<li>Defined in data/measurements.ts:318</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -144,25 +150,47 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
+									<h5>description: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
 									<h5>measurements: <span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="data.measurementcollection.html" class="tsd-signature-type">MeasurementCollection</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="data.measurementgroup.html" class="tsd-signature-type">MeasurementGroup</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="description" class="tsd-anchor"></a>
+					<h3>description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in data/measurements.ts:318</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The description of this measurement group</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="length" class="tsd-anchor"></a>
 					<h3>length</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> length<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="data.measurementcollection.html">MeasurementCollection</a>.<a href="data.measurementcollection.html#length">length</a></p>
 								<ul>
 									<li>Defined in data/measurements.ts:135</li>
 								</ul>
@@ -177,17 +205,18 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
 					<a name="___iterator" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> __@iterator</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
 						<li class="tsd-signature tsd-kind-icon">__@iterator<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="data.measurementcollection.html">MeasurementCollection</a>.<a href="data.measurementcollection.html#___iterator">__@iterator</a></p>
 								<ul>
 									<li>Defined in data/measurements.ts:120</li>
 								</ul>
@@ -198,15 +227,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="findmeasurementbyentity" class="tsd-anchor"></a>
 					<h3>find<wbr>Measurement<wbr>ByEntity</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">find<wbr>Measurement<wbr>ByEntity<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="data.rawdataitem.html" class="tsd-signature-type">RawDataItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="data.measurementcollection.html">MeasurementCollection</a>.<a href="data.measurementcollection.html#findmeasurementbyentity">findMeasurementByEntity</a></p>
 								<ul>
 									<li>Defined in data/measurements.ts:143</li>
 								</ul>
@@ -229,15 +259,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="findmeasurementsbyentity" class="tsd-anchor"></a>
 					<h3>find<wbr>Measurements<wbr>ByEntity</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">find<wbr>Measurements<wbr>ByEntity<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="data.measurementcollection.html">MeasurementCollection</a>.<a href="data.measurementcollection.html#findmeasurementsbyentity">findMeasurementsByEntity</a></p>
 								<ul>
 									<li>Defined in data/measurements.ts:156</li>
 								</ul>
@@ -260,15 +291,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="findvaluebyentity" class="tsd-anchor"></a>
 					<h3>find<wbr>Value<wbr>ByEntity</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">find<wbr>Value<wbr>ByEntity<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="data.rawdataitem.html" class="tsd-signature-type">RawDataItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="data.measurementcollection.html">MeasurementCollection</a>.<a href="data.measurementcollection.html#findvaluebyentity">findValueByEntity</a></p>
 								<ul>
 									<li>Defined in data/measurements.ts:178</li>
 								</ul>
@@ -291,15 +323,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="findvaluesbyentity" class="tsd-anchor"></a>
 					<h3>find<wbr>Values<wbr>ByEntity</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">find<wbr>Values<wbr>ByEntity<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="data.measurementcollection.html">MeasurementCollection</a>.<a href="data.measurementcollection.html#findvaluesbyentity">findValuesByEntity</a></p>
 								<ul>
 									<li>Defined in data/measurements.ts:199</li>
 								</ul>
@@ -322,15 +355,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
 					<a name="first" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> first</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
 						<li class="tsd-signature tsd-kind-icon">first<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="data.measurementcollection.html">MeasurementCollection</a>.<a href="data.measurementcollection.html#first">first</a></p>
 								<ul>
 									<li>Defined in data/measurements.ts:216</li>
 								</ul>
@@ -344,15 +378,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="iter" class="tsd-anchor"></a>
 					<h3>iter</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">iter<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="data.measurementcollection.html">MeasurementCollection</a>.<a href="data.measurementcollection.html#iter">iter</a></p>
 								<ul>
 									<li>Defined in data/measurements.ts:127</li>
 								</ul>
@@ -419,34 +454,37 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="data.measurementcollection.html" class="tsd-kind-icon">Measurement<wbr>Collection</a>
+						<a href="data.measurementgroup.html" class="tsd-kind-icon">Measurement<wbr>Group</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
-								<a href="data.measurementcollection.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-private">
+								<a href="data.measurementgroup.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="data.measurementcollection.html#length" class="tsd-kind-icon">length</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="data.measurementgroup.html#description" class="tsd-kind-icon">description</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="data.measurementcollection.html#___iterator" class="tsd-kind-icon">__@iterator</a>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="data.measurementgroup.html#length" class="tsd-kind-icon">length</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="data.measurementcollection.html#findmeasurementbyentity" class="tsd-kind-icon">find<wbr>Measurement<wbr>ByEntity</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
+								<a href="data.measurementgroup.html#___iterator" class="tsd-kind-icon">__@iterator</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="data.measurementcollection.html#findmeasurementsbyentity" class="tsd-kind-icon">find<wbr>Measurements<wbr>ByEntity</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="data.measurementgroup.html#findmeasurementbyentity" class="tsd-kind-icon">find<wbr>Measurement<wbr>ByEntity</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="data.measurementcollection.html#findvaluebyentity" class="tsd-kind-icon">find<wbr>Value<wbr>ByEntity</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="data.measurementgroup.html#findmeasurementsbyentity" class="tsd-kind-icon">find<wbr>Measurements<wbr>ByEntity</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="data.measurementcollection.html#findvaluesbyentity" class="tsd-kind-icon">find<wbr>Values<wbr>ByEntity</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="data.measurementgroup.html#findvaluebyentity" class="tsd-kind-icon">find<wbr>Value<wbr>ByEntity</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="data.measurementcollection.html#first" class="tsd-kind-icon">first</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="data.measurementgroup.html#findvaluesbyentity" class="tsd-kind-icon">find<wbr>Values<wbr>ByEntity</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="data.measurementcollection.html#iter" class="tsd-kind-icon">iter</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
+								<a href="data.measurementgroup.html#first" class="tsd-kind-icon">first</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="data.measurementgroup.html#iter" class="tsd-kind-icon">iter</a>
 							</li>
 						</ul>
 					</li>

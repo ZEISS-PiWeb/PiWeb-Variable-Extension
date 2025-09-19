@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MeasurementCollection | PiWeb Variable Extension API Reference</title>
+	<title>FormplotCollection | PiWeb Variable Extension API Reference</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/data.html">data</a>
 				</li>
 				<li>
-					<a href="data.measurementcollection.html">MeasurementCollection</a>
+					<a href="data.formplotcollection.html">FormplotCollection</a>
 				</li>
 			</ul>
-			<h1>Class MeasurementCollection</h1>
+			<h1>Class FormplotCollection</h1>
 		</div>
 	</div>
 </header>
@@ -70,27 +70,27 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A collection of <a href="#measurement"><code>Measurements</code></a>. It offers a wide range of functions to improve its accessibility. You can iterate over the collection like the following:</p>
+						<p>Acts as an accessibility layer for a range of formplots.</p>
 					</div>
-					<pre><code class="lang-TypeScript"><span class="hljs-keyword">const</span> measurementCollection = piweb.data.getMeasurementCollection();
-<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> measurement of measurementCollection)
-{
-    ...
-}
-</code></pre>
+					<dl class="tsd-comment-tags">
+						<dt>version</dt>
+						<dd><p>1.4</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">MeasurementCollection</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="data.measurementgroup.html" class="tsd-signature-type">MeasurementGroup</a>
-							</li>
-						</ul>
+						<span class="target">FormplotCollection</span>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><a href="data.formplot.html" class="tsd-signature-type">Formplot</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -100,25 +100,22 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-private"><a href="data.measurementcollection.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-private"><a href="data.formplotcollection.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="data.measurementcollection.html#length" class="tsd-kind-icon">length</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="data.formplotcollection.html#length" class="tsd-kind-icon">length</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="data.measurementcollection.html#___iterator" class="tsd-kind-icon">__@iterator</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.measurementcollection.html#findmeasurementbyentity" class="tsd-kind-icon">find<wbr>Measurement<wbr>ByEntity</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.measurementcollection.html#findmeasurementsbyentity" class="tsd-kind-icon">find<wbr>Measurements<wbr>ByEntity</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.measurementcollection.html#findvaluebyentity" class="tsd-kind-icon">find<wbr>Value<wbr>ByEntity</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.measurementcollection.html#findvaluesbyentity" class="tsd-kind-icon">find<wbr>Values<wbr>ByEntity</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="data.measurementcollection.html#first" class="tsd-kind-icon">first</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.measurementcollection.html#iter" class="tsd-kind-icon">iter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="data.formplotcollection.html#___iterator" class="tsd-kind-icon">__@iterator</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.formplotcollection.html#findplotsbyentity" class="tsd-kind-icon">find<wbr>Plots<wbr>ByEntity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="data.formplotcollection.html#first" class="tsd-kind-icon">first</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.formplotcollection.html#iter" class="tsd-kind-icon">iter</a></li>
 							</ul>
 						</section>
 					</div>
@@ -130,13 +127,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Measurement<wbr>Collection<span class="tsd-signature-symbol">(</span>measurements<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.measurementcollection.html" class="tsd-signature-type">MeasurementCollection</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Formplot<wbr>Collection<span class="tsd-signature-symbol">(</span>plots<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="data.formplot.html" class="tsd-signature-type">Formplot</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.formplotcollection.html" class="tsd-signature-type">FormplotCollection</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/measurements.ts:105</li>
+									<li>Defined in data/plot.ts:166</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -144,10 +141,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>measurements: <span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>plots: <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="data.formplot.html" class="tsd-signature-type">Formplot</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="data.measurementcollection.html" class="tsd-signature-type">MeasurementCollection</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="data.formplotcollection.html" class="tsd-signature-type">FormplotCollection</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -164,12 +161,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/measurements.ts:135</li>
+									<li>Defined in data/plot.ts:208</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Gets the number of measurements in the collection.</p>
+									<p>Gets the total number of plots stored in the collection.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -183,142 +180,71 @@
 					<a name="___iterator" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> __@iterator</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">__@iterator<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">__@iterator<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="data.formplot.html" class="tsd-signature-type">Formplot</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/measurements.ts:120</li>
+									<li>Defined in data/plot.ts:194</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="data.formplot.html" class="tsd-signature-type">Formplot</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="findmeasurementbyentity" class="tsd-anchor"></a>
-					<h3>find<wbr>Measurement<wbr>ByEntity</h3>
+					<a name="findplotsbyentity" class="tsd-anchor"></a>
+					<h3>find<wbr>Plots<wbr>ByEntity</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Measurement<wbr>ByEntity<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="data.rawdataitem.html" class="tsd-signature-type">RawDataItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Plots<wbr>ByEntity<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol"> | </span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol"> | </span><a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.formplot.html" class="tsd-signature-type">Formplot</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/measurements.ts:143</li>
+									<li>Defined in data/plot.ts:222</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the measurement that associated to the the specified raw data item or <code>undefined</code> if the collection contains no such measurement.</p>
+									<p>Returns the plots that are associated with the specified entity. The following associations are assumed:</p>
 								</div>
+								<table>
+									<thead>
+										<tr>
+											<th>Entity</th>
+											<th>Association</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><a href="data.measurement.html">Measurement</a></td>
+											<td>The measurement of the measurement value to which the plot is attached</td>
+										</tr>
+										<tr>
+											<td><a href="data.measurementvalue.html">MeasurementValue</a></td>
+											<td>The measurement value to which the plot is attached</td>
+										</tr>
+										<tr>
+											<td><a href="data.inspectionplanitem.html">InspectionPlanItem</a></td>
+											<td>The characteristic of the value to which the plot is attached</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>entity: <a href="data.rawdataitem.html" class="tsd-signature-type">RawDataItem</a></h5>
+									<h5>entity: <a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol"> | </span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol"> | </span><a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The raw data item from which the measurement should be returned.</p>
+										<p>A measurement, measurement value or inspection plan item.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="data.measurement.html" class="tsd-signature-type">Measurement</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="findmeasurementsbyentity" class="tsd-anchor"></a>
-					<h3>find<wbr>Measurements<wbr>ByEntity</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Measurements<wbr>ByEntity<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in data/measurements.ts:156</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the measurements that are associated to the the specified inspection plan part or <code>undefined</code> if the collection contains no such measurement.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>entity: <a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The inspection plan part to search measurements for.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="findvaluebyentity" class="tsd-anchor"></a>
-					<h3>find<wbr>Value<wbr>ByEntity</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Value<wbr>ByEntity<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="data.rawdataitem.html" class="tsd-signature-type">RawDataItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in data/measurements.ts:178</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the measurement value that is associated to the specified <a href="#rawdataitem"><code>RawDataItem</code></a> or <code>undefined</code> if the collection contains no such measurement value.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>entity: <a href="data.rawdataitem.html" class="tsd-signature-type">RawDataItem</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The raw data item from which the measurement value should be returned.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="findvaluesbyentity" class="tsd-anchor"></a>
-					<h3>find<wbr>Values<wbr>ByEntity</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Values<wbr>ByEntity<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in data/measurements.ts:199</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the measurement values that are associated to the the specified inspection plan characteristic or <code>undefined</code> if the collection contains no such measurement.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>entity: <a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The inspection plan characteristic to search values for.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.formplot.html" class="tsd-signature-type">Formplot</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -326,18 +252,18 @@
 					<a name="first" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> first</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">first<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">first<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.formplot.html" class="tsd-signature-type">Formplot</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/measurements.ts:216</li>
+									<li>Defined in data/plot.ts:237</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="data.measurement.html" class="tsd-signature-type">Measurement</a>
+							<h4 class="tsd-returns-title">Returns <a href="data.formplot.html" class="tsd-signature-type">Formplot</a>
 								<span class="tsd-signature-symbol"> | </span>
 								<span class="tsd-signature-type">undefined</span>
 							</h4>
@@ -348,21 +274,21 @@
 					<a name="iter" class="tsd-anchor"></a>
 					<h3>iter</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">iter<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">iter<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.formplot.html" class="tsd-signature-type">Formplot</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/measurements.ts:127</li>
+									<li>Defined in data/plot.ts:201</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns an iter over all measurements.</p>
+									<p>Returns an iter over all plots.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.formplot.html" class="tsd-signature-type">Formplot</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -419,34 +345,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="data.measurementcollection.html" class="tsd-kind-icon">Measurement<wbr>Collection</a>
+						<a href="data.formplotcollection.html" class="tsd-kind-icon">Formplot<wbr>Collection</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
-								<a href="data.measurementcollection.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="data.formplotcollection.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="data.measurementcollection.html#length" class="tsd-kind-icon">length</a>
+								<a href="data.formplotcollection.html#length" class="tsd-kind-icon">length</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="data.measurementcollection.html#___iterator" class="tsd-kind-icon">__@iterator</a>
+								<a href="data.formplotcollection.html#___iterator" class="tsd-kind-icon">__@iterator</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="data.measurementcollection.html#findmeasurementbyentity" class="tsd-kind-icon">find<wbr>Measurement<wbr>ByEntity</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="data.measurementcollection.html#findmeasurementsbyentity" class="tsd-kind-icon">find<wbr>Measurements<wbr>ByEntity</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="data.measurementcollection.html#findvaluebyentity" class="tsd-kind-icon">find<wbr>Value<wbr>ByEntity</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="data.measurementcollection.html#findvaluesbyentity" class="tsd-kind-icon">find<wbr>Values<wbr>ByEntity</a>
+								<a href="data.formplotcollection.html#findplotsbyentity" class="tsd-kind-icon">find<wbr>Plots<wbr>ByEntity</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="data.measurementcollection.html#first" class="tsd-kind-icon">first</a>
+								<a href="data.formplotcollection.html#first" class="tsd-kind-icon">first</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="data.measurementcollection.html#iter" class="tsd-kind-icon">iter</a>
+								<a href="data.formplotcollection.html#iter" class="tsd-kind-icon">iter</a>
 							</li>
 						</ul>
 					</li>

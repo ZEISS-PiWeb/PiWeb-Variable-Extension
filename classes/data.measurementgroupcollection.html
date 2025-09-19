@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Measurement | PiWeb Variable Extension API Reference</title>
+	<title>MeasurementGroupCollection | PiWeb Variable Extension API Reference</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/data.html">data</a>
 				</li>
 				<li>
-					<a href="data.measurement.html">Measurement</a>
+					<a href="data.measurementgroupcollection.html">MeasurementGroupCollection</a>
 				</li>
 			</ul>
-			<h1>Class Measurement</h1>
+			<h1>Class MeasurementGroupCollection</h1>
 		</div>
 	</div>
 </header>
@@ -70,23 +70,25 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Describes a measurement of an inspection plan part. A measurement is composed of measurement values that are associated to characteristics.
-						The characteristics are the children of the part to which the measurement is associated.</p>
+						<p>A collection of <a href="#measurementgroup"><code>measurement groups</code></a>. The groups can be defined in PiWeb Monitor. Each group is a <a href="#measurementcollection"><code>measurement collection</code></a> with a specific key:</p>
 					</div>
+					<pre><code class="lang-TypeScript"><span class="hljs-keyword">const</span> measurementGroups = piweb.data.getMeasurementGroupCollection();
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> measurementGroup of measurementGroupCollection)
+{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> measurement of measurementGroup)
+    {
+        ...
+       }
+}
+</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Measurement</span>
+						<span class="target">MeasurementGroupCollection</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/data.iattributeitem.html" class="tsd-signature-type">IAttributeItem</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -96,32 +98,29 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-private"><a href="data.measurement.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-private"><a href="data.measurementgroupcollection.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="data.measurement.html#_values" class="tsd-kind-icon">_values</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="data.measurement.html#attributes" class="tsd-kind-icon">attributes</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="data.measurement.html#measurementid" class="tsd-kind-icon">measurement<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="data.measurement.html#partid" class="tsd-kind-icon">part<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="data.measurementgroupcollection.html#groupingkey" class="tsd-kind-icon">grouping<wbr>Key</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="data.measurementgroupcollection.html#groupingtimespan" class="tsd-kind-icon">grouping<wbr>Time<wbr>Span</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="data.measurementgroupcollection.html#groupingtype" class="tsd-kind-icon">grouping<wbr>Type</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="data.measurement.html#allmeasurementvalues" class="tsd-kind-icon">all<wbr>Measurement<wbr>Values</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="data.measurement.html#valuecount" class="tsd-kind-icon">value<wbr>Count</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="data.measurementgroupcollection.html#length" class="tsd-kind-icon">length</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.measurement.html#findvaluebyentity" class="tsd-kind-icon">find<wbr>Value<wbr>ByEntity</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="data.measurement.html#first" class="tsd-kind-icon">first</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="data.measurement.html#getmeasurementguid" class="tsd-kind-icon">get<wbr>Measurement<wbr>Guid</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="data.measurement.html#getpartguid" class="tsd-kind-icon">get<wbr>Part<wbr>Guid</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="data.measurementgroupcollection.html#___iterator" class="tsd-kind-icon">__@iterator</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="data.measurementgroupcollection.html#first" class="tsd-kind-icon">first</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="data.measurementgroupcollection.html#iter" class="tsd-kind-icon">iter</a></li>
 							</ul>
 						</section>
 					</div>
@@ -133,13 +132,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Measurement<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, partId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, attributes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><a href="data.attribute.html" class="tsd-signature-type">Attribute</a><span class="tsd-signature-symbol">&gt;</span>, values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.measurement.html" class="tsd-signature-type">Measurement</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Measurement<wbr>Group<wbr>Collection<span class="tsd-signature-symbol">(</span>groups<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurementgroup.html" class="tsd-signature-type">MeasurementGroup</a><span class="tsd-signature-symbol">&gt;</span>, groupingType<span class="tsd-signature-symbol">: </span><a href="../modules/data.html#measurementgroupingtype" class="tsd-signature-type">MeasurementGroupingType</a>, groupingKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, groupingTimeSpan<span class="tsd-signature-symbol">: </span><a href="../modules/data.html#measurementgroupingtimespan" class="tsd-signature-type">MeasurementGroupingTimeSpan</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.measurementgroupcollection.html" class="tsd-signature-type">MeasurementGroupCollection</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/measurements.ts:355</li>
+									<li>Defined in data/measurements.ts:257</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -147,118 +146,89 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<h5>groups: <span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurementgroup.html" class="tsd-signature-type">MeasurementGroup</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>partId: <span class="tsd-signature-type">string</span></h5>
+									<h5>groupingType: <a href="../modules/data.html#measurementgroupingtype" class="tsd-signature-type">MeasurementGroupingType</a></h5>
 								</li>
 								<li>
-									<h5>attributes: <span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><a href="data.attribute.html" class="tsd-signature-type">Attribute</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>groupingKey: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
 								</li>
 								<li>
-									<h5>values: <span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>groupingTimeSpan: <a href="../modules/data.html#measurementgroupingtimespan" class="tsd-signature-type">MeasurementGroupingTimeSpan</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="data.measurement.html" class="tsd-signature-type">Measurement</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="data.measurementgroupcollection.html" class="tsd-signature-type">MeasurementGroupCollection</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_values" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _values</h3>
-					<div class="tsd-signature tsd-kind-icon">_values<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in data/measurements.ts:355</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-					</div>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="attributes" class="tsd-anchor"></a>
-					<h3>attributes</h3>
-					<div class="tsd-signature tsd-kind-icon">attributes<span class="tsd-signature-symbol">:</span> <a href="data.attributecollection.html" class="tsd-signature-type">AttributeCollection</a></div>
+					<a name="groupingkey" class="tsd-anchor"></a>
+					<h3>grouping<wbr>Key</h3>
+					<div class="tsd-signature tsd-kind-icon">grouping<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/data.iattributeitem.html">IAttributeItem</a>.<a href="../interfaces/data.iattributeitem.html#attributes">attributes</a></p>
 						<ul>
-							<li>Defined in data/measurements.ts:340</li>
+							<li>Defined in data/measurements.ts:252</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Gets the attributes of this measurement.</p>
+							<p>The attribute key, by which the measurements are grouped.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="measurementid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> measurement<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">measurement<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="groupingtimespan" class="tsd-anchor"></a>
+					<h3>grouping<wbr>Time<wbr>Span</h3>
+					<div class="tsd-signature tsd-kind-icon">grouping<wbr>Time<wbr>Span<span class="tsd-signature-symbol">:</span> <a href="../modules/data.html#measurementgroupingtimespan" class="tsd-signature-type">MeasurementGroupingTimeSpan</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in data/measurements.ts:345</li>
+							<li>Defined in data/measurements.ts:257</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>In case the measurements are grouped by time, these are the time spans by which the measurements are grouped.</p>
+						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="partid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> part<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">part<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="groupingtype" class="tsd-anchor"></a>
+					<h3>grouping<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">grouping<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../modules/data.html#measurementgroupingtype" class="tsd-signature-type">MeasurementGroupingType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in data/measurements.ts:350</li>
+							<li>Defined in data/measurements.ts:247</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Describes, how the measurements are grouped.</p>
+						</div>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="allmeasurementvalues" class="tsd-anchor"></a>
-					<h3>all<wbr>Measurement<wbr>Values</h3>
+					<a name="length" class="tsd-anchor"></a>
+					<h3>length</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> allMeasurementValues<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> length<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/measurements.ts:409</li>
+									<li>Defined in data/measurements.ts:291</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns an iter over all values that are associated to this measurement. In case you fetched the measurements without values, the set is empty.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="valuecount" class="tsd-anchor"></a>
-					<h3>value<wbr>Count</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> valueCount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in data/measurements.ts:402</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets the number of measurement values associated to this measurement.</p>
+									<p>Gets the number of measurements in the collection.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -268,34 +238,22 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="findvaluebyentity" class="tsd-anchor"></a>
-					<h3>find<wbr>Value<wbr>ByEntity</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Value<wbr>ByEntity<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="___iterator" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> __@iterator</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">__@iterator<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurementgroup.html" class="tsd-signature-type">MeasurementGroup</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/measurements.ts:390</li>
+									<li>Defined in data/measurements.ts:276</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the measurement value that is associated to the specified characteristic or <code>undefined</code> if the measurement contains no such measurement value.</p>
-								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>entity: <a href="data.inspectionplanitem.html" class="tsd-signature-type">InspectionPlanItem</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The inspection plan characteristic to search the value for.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurementgroup.html" class="tsd-signature-type">MeasurementGroup</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -303,59 +261,43 @@
 					<a name="first" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> first</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">first<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">first<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="data.measurementgroup.html" class="tsd-signature-type">MeasurementGroup</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/measurements.ts:416</li>
+									<li>Defined in data/measurements.ts:298</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="data.measurementvalue.html" class="tsd-signature-type">MeasurementValue</a>
+							<h4 class="tsd-returns-title">Returns <a href="data.measurementgroup.html" class="tsd-signature-type">MeasurementGroup</a>
 								<span class="tsd-signature-symbol"> | </span>
 								<span class="tsd-signature-type">undefined</span>
 							</h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="getmeasurementguid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Measurement<wbr>Guid</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Measurement<wbr>Guid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="iter" class="tsd-anchor"></a>
+					<h3>iter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">iter<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurementgroup.html" class="tsd-signature-type">MeasurementGroup</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in data/measurements.ts:375</li>
+									<li>Defined in data/measurements.ts:283</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an iter over all measurements.</p>
+								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="getpartguid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Part<wbr>Guid</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Part<wbr>Guid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in data/measurements.ts:382</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iter</span><span class="tsd-signature-symbol">&lt;</span><a href="data.measurementgroup.html" class="tsd-signature-type">MeasurementGroup</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -412,40 +354,31 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="data.measurement.html" class="tsd-kind-icon">Measurement</a>
+						<a href="data.measurementgroupcollection.html" class="tsd-kind-icon">Measurement<wbr>Group<wbr>Collection</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
-								<a href="data.measurement.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="data.measurement.html#_values" class="tsd-kind-icon">_values</a>
+								<a href="data.measurementgroupcollection.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="data.measurement.html#attributes" class="tsd-kind-icon">attributes</a>
+								<a href="data.measurementgroupcollection.html#groupingkey" class="tsd-kind-icon">grouping<wbr>Key</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="data.measurement.html#measurementid" class="tsd-kind-icon">measurement<wbr>Id</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="data.measurementgroupcollection.html#groupingtimespan" class="tsd-kind-icon">grouping<wbr>Time<wbr>Span</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="data.measurement.html#partid" class="tsd-kind-icon">part<wbr>Id</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="data.measurement.html#allmeasurementvalues" class="tsd-kind-icon">all<wbr>Measurement<wbr>Values</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="data.measurementgroupcollection.html#groupingtype" class="tsd-kind-icon">grouping<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="data.measurement.html#valuecount" class="tsd-kind-icon">value<wbr>Count</a>
+								<a href="data.measurementgroupcollection.html#length" class="tsd-kind-icon">length</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="data.measurementgroupcollection.html#___iterator" class="tsd-kind-icon">__@iterator</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="data.measurementgroupcollection.html#first" class="tsd-kind-icon">first</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="data.measurement.html#findvaluebyentity" class="tsd-kind-icon">find<wbr>Value<wbr>ByEntity</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="data.measurement.html#first" class="tsd-kind-icon">first</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="data.measurement.html#getmeasurementguid" class="tsd-kind-icon">get<wbr>Measurement<wbr>Guid</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="data.measurement.html#getpartguid" class="tsd-kind-icon">get<wbr>Part<wbr>Guid</a>
+								<a href="data.measurementgroupcollection.html#iter" class="tsd-kind-icon">iter</a>
 							</li>
 						</ul>
 					</li>
