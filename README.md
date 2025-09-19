@@ -28,6 +28,8 @@ The package structure looks like the following:
 | 7.8 or later | [Download](https://github.com/ZEISS-PiWeb/PiWeb-Variable-Extension/raw/master/MyVariable_1.0.zip)|
 | 8.0 or later | [Download](https://github.com/ZEISS-PiWeb/PiWeb-Variable-Extension/raw/master/MyVariable_1.1.zip)|
 | 8.4 or later | [Download](https://github.com/ZEISS-PiWeb/PiWeb-Variable-Extension/raw/master/MyVariable_1.2.zip)|
+| 8.6 or later | [Download](https://github.com/ZEISS-PiWeb/PiWeb-Variable-Extension/raw/master/MyVariable_1.3.zip)|
+| 25.2 or later | [Download](https://github.com/ZEISS-PiWeb/PiWeb-Variable-Extension/raw/master/MyVariable_1.4.zip)|
 
 ### 1. Create the folder `MyVariable` 
 
@@ -92,6 +94,8 @@ These are the type definitions of the PiWeb variable extension interface. It wil
 | 7.8 or later| [Download](https://github.com/ZEISS-PiWeb/PiWeb-Variable-Extension/raw/master/piweb-variable-api-1-0.d.ts) |
 | 8.0 or later| [Download](https://github.com/ZEISS-PiWeb/PiWeb-Variable-Extension/raw/master/piweb-variable-api-1-1.d.ts) |
 | 8.4 or later| [Download](https://github.com/ZEISS-PiWeb/PiWeb-Variable-Extension/raw/master/piweb-variable-api-1-2.d.ts) |
+| 8.6 or later| [Download](https://github.com/ZEISS-PiWeb/PiWeb-Variable-Extension/raw/master/piweb-variable-api-1-3.d.ts) |
+| 25.2 or later| [Download](https://github.com/ZEISS-PiWeb/PiWeb-Variable-Extension/raw/master/piweb-variable-api-1-4.d.ts) |
 
 
 ### 5. Create the folder `src` and create the file `index.ts` in it
